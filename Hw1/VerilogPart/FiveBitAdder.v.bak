@@ -1,0 +1,14 @@
+module Full_Adder_5(
+	input [4:0]in1,
+	input [4:0]in2, 
+	input cIn, 
+	output cOut, 
+	output [4:0] sum);
+	
+	wire tmpCarry; //inside carry
+	
+	FullAdder4(in1[3:0], in2[3:0], cIn, tmpCarry, sum[3:0]);
+	FullAdder4(in1[7:4], in2[7:4], tmpCarry, cOut, sum[7:4]);
+
+
+endmodule

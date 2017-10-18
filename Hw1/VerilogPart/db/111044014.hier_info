@@ -1,0 +1,430 @@
+|project01
+R[0] << Mux4to1_5:mf.port5
+R[1] << Mux4to1_5:mf.port5
+R[2] << Mux4to1_5:mf.port5
+R[3] << Mux4to1_5:mf.port5
+R[4] << Mux4to1_5:mf.port5
+A[0] => A[0].IN4
+A[1] => A[1].IN4
+A[2] => A[2].IN4
+A[3] => A[3].IN4
+A[4] => A[4].IN4
+B[0] => B[0].IN4
+B[1] => B[1].IN4
+B[2] => B[2].IN4
+B[3] => B[3].IN4
+B[4] => B[4].IN4
+S[0] => S[0].IN1
+S[1] => S[1].IN1
+
+
+|project01|FiveBitAdder:adder
+sum[0] <= FullAdder:a1.port4
+sum[1] <= FullAdder:a2.port4
+sum[2] <= FullAdder:a3.port4
+sum[3] <= FullAdder:a4.port4
+sum[4] <= FullAdder:a5.port4
+in1[0] => in1[0].IN1
+in1[1] => in1[1].IN1
+in1[2] => in1[2].IN1
+in1[3] => in1[3].IN1
+in1[4] => in1[4].IN1
+in2[0] => in2[0].IN1
+in2[1] => in2[1].IN1
+in2[2] => in2[2].IN1
+in2[3] => in2[3].IN1
+in2[4] => in2[4].IN1
+cIn => cIn.IN1
+
+
+|project01|FiveBitAdder:adder|FullAdder:a1
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|project01|FiveBitAdder:adder|FullAdder:a1|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|FiveBitAdder:adder|FullAdder:a1|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|FiveBitAdder:adder|FullAdder:a2
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|project01|FiveBitAdder:adder|FullAdder:a2|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|FiveBitAdder:adder|FullAdder:a2|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|FiveBitAdder:adder|FullAdder:a3
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|project01|FiveBitAdder:adder|FullAdder:a3|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|FiveBitAdder:adder|FullAdder:a3|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|FiveBitAdder:adder|FullAdder:a4
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|project01|FiveBitAdder:adder|FullAdder:a4|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|FiveBitAdder:adder|FullAdder:a4|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|FiveBitAdder:adder|FullAdder:a5
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|project01|FiveBitAdder:adder|FullAdder:a5|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|FiveBitAdder:adder|FullAdder:a5|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|FivebitXor:xorer
+F[0] <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= xor3.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= xor4.DB_MAX_OUTPUT_PORT_TYPE
+F[4] <= xor5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => xor1.IN0
+A[1] => xor2.IN0
+A[2] => xor3.IN0
+A[3] => xor4.IN0
+A[4] => xor5.IN0
+B[0] => xor1.IN1
+B[1] => xor2.IN1
+B[2] => xor3.IN1
+B[3] => xor4.IN1
+B[4] => xor5.IN1
+
+
+|project01|FivebitAnd:andorer
+F[0] <= and1.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= and3.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= and4.DB_MAX_OUTPUT_PORT_TYPE
+F[4] <= and5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => and1.IN0
+A[1] => and2.IN0
+A[2] => and3.IN0
+A[3] => and4.IN0
+A[4] => and5.IN0
+B[0] => and1.IN1
+B[1] => and2.IN1
+B[2] => and3.IN1
+B[3] => and4.IN1
+B[4] => and5.IN1
+
+
+|project01|Fivebitor:orar
+F[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= or4.DB_MAX_OUTPUT_PORT_TYPE
+F[4] <= or5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => or1.IN0
+A[1] => or2.IN0
+A[2] => or3.IN0
+A[3] => or4.IN0
+A[4] => or5.IN0
+B[0] => or1.IN1
+B[1] => or2.IN1
+B[2] => or3.IN1
+B[3] => or4.IN1
+B[4] => or5.IN1
+
+
+|project01|Mux4to1_5:mf
+in0[0] => in0[0].IN1
+in0[1] => in0[1].IN1
+in0[2] => in0[2].IN1
+in0[3] => in0[3].IN1
+in0[4] => in0[4].IN1
+in1[0] => in1[0].IN1
+in1[1] => in1[1].IN1
+in1[2] => in1[2].IN1
+in1[3] => in1[3].IN1
+in1[4] => in1[4].IN1
+in2[0] => in2[0].IN1
+in2[1] => in2[1].IN1
+in2[2] => in2[2].IN1
+in2[3] => in2[3].IN1
+in2[4] => in2[4].IN1
+in3[0] => in3[0].IN1
+in3[1] => in3[1].IN1
+in3[2] => in3[2].IN1
+in3[3] => in3[3].IN1
+in3[4] => in3[4].IN1
+sel[0] => sel[0].IN2
+sel[1] => sel[1].IN1
+out[0] <= Mux2to1_5:m3.port3
+out[1] <= Mux2to1_5:m3.port3
+out[2] <= Mux2to1_5:m3.port3
+out[3] <= Mux2to1_5:m3.port3
+out[4] <= Mux2to1_5:m3.port3
+
+
+|project01|Mux4to1_5:mf|Mux2to1_5:m1
+in1[0] => in1[0].IN1
+in1[1] => in1[1].IN1
+in1[2] => in1[2].IN1
+in1[3] => in1[3].IN1
+in1[4] => in1[4].IN1
+in2[0] => in2[0].IN1
+in2[1] => in2[1].IN1
+in2[2] => in2[2].IN1
+in2[3] => in2[3].IN1
+in2[4] => in2[4].IN1
+sel => sel.IN5
+out[0] <= Mux2to1:m00.port3
+out[1] <= Mux2to1:m01.port3
+out[2] <= Mux2to1:m02.port3
+out[3] <= Mux2to1:m03.port3
+out[4] <= Mux2to1:m04.port3
+
+
+|project01|Mux4to1_5:mf|Mux2to1_5:m1|Mux2to1:m00
+in1 => w2.IN0
+in2 => w3.IN0
+sel => w3.IN1
+sel => w2.IN1
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|Mux4to1_5:mf|Mux2to1_5:m1|Mux2to1:m01
+in1 => w2.IN0
+in2 => w3.IN0
+sel => w3.IN1
+sel => w2.IN1
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|Mux4to1_5:mf|Mux2to1_5:m1|Mux2to1:m02
+in1 => w2.IN0
+in2 => w3.IN0
+sel => w3.IN1
+sel => w2.IN1
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|Mux4to1_5:mf|Mux2to1_5:m1|Mux2to1:m03
+in1 => w2.IN0
+in2 => w3.IN0
+sel => w3.IN1
+sel => w2.IN1
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|Mux4to1_5:mf|Mux2to1_5:m1|Mux2to1:m04
+in1 => w2.IN0
+in2 => w3.IN0
+sel => w3.IN1
+sel => w2.IN1
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|Mux4to1_5:mf|Mux2to1_5:m2
+in1[0] => in1[0].IN1
+in1[1] => in1[1].IN1
+in1[2] => in1[2].IN1
+in1[3] => in1[3].IN1
+in1[4] => in1[4].IN1
+in2[0] => in2[0].IN1
+in2[1] => in2[1].IN1
+in2[2] => in2[2].IN1
+in2[3] => in2[3].IN1
+in2[4] => in2[4].IN1
+sel => sel.IN5
+out[0] <= Mux2to1:m00.port3
+out[1] <= Mux2to1:m01.port3
+out[2] <= Mux2to1:m02.port3
+out[3] <= Mux2to1:m03.port3
+out[4] <= Mux2to1:m04.port3
+
+
+|project01|Mux4to1_5:mf|Mux2to1_5:m2|Mux2to1:m00
+in1 => w2.IN0
+in2 => w3.IN0
+sel => w3.IN1
+sel => w2.IN1
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|Mux4to1_5:mf|Mux2to1_5:m2|Mux2to1:m01
+in1 => w2.IN0
+in2 => w3.IN0
+sel => w3.IN1
+sel => w2.IN1
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|Mux4to1_5:mf|Mux2to1_5:m2|Mux2to1:m02
+in1 => w2.IN0
+in2 => w3.IN0
+sel => w3.IN1
+sel => w2.IN1
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|Mux4to1_5:mf|Mux2to1_5:m2|Mux2to1:m03
+in1 => w2.IN0
+in2 => w3.IN0
+sel => w3.IN1
+sel => w2.IN1
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|Mux4to1_5:mf|Mux2to1_5:m2|Mux2to1:m04
+in1 => w2.IN0
+in2 => w3.IN0
+sel => w3.IN1
+sel => w2.IN1
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|Mux4to1_5:mf|Mux2to1_5:m3
+in1[0] => in1[0].IN1
+in1[1] => in1[1].IN1
+in1[2] => in1[2].IN1
+in1[3] => in1[3].IN1
+in1[4] => in1[4].IN1
+in2[0] => in2[0].IN1
+in2[1] => in2[1].IN1
+in2[2] => in2[2].IN1
+in2[3] => in2[3].IN1
+in2[4] => in2[4].IN1
+sel => sel.IN5
+out[0] <= Mux2to1:m00.port3
+out[1] <= Mux2to1:m01.port3
+out[2] <= Mux2to1:m02.port3
+out[3] <= Mux2to1:m03.port3
+out[4] <= Mux2to1:m04.port3
+
+
+|project01|Mux4to1_5:mf|Mux2to1_5:m3|Mux2to1:m00
+in1 => w2.IN0
+in2 => w3.IN0
+sel => w3.IN1
+sel => w2.IN1
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|Mux4to1_5:mf|Mux2to1_5:m3|Mux2to1:m01
+in1 => w2.IN0
+in2 => w3.IN0
+sel => w3.IN1
+sel => w2.IN1
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|Mux4to1_5:mf|Mux2to1_5:m3|Mux2to1:m02
+in1 => w2.IN0
+in2 => w3.IN0
+sel => w3.IN1
+sel => w2.IN1
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|Mux4to1_5:mf|Mux2to1_5:m3|Mux2to1:m03
+in1 => w2.IN0
+in2 => w3.IN0
+sel => w3.IN1
+sel => w2.IN1
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|project01|Mux4to1_5:mf|Mux2to1_5:m3|Mux2to1:m04
+in1 => w2.IN0
+in2 => w3.IN0
+sel => w3.IN1
+sel => w2.IN1
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

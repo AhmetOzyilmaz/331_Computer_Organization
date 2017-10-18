@@ -1,0 +1,134 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do 111044014_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit {D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/project01.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module project01
+# 
+# Top level modules:
+# 	project01
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit {D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/Mux4to1_5.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux4to1_5
+# 
+# Top level modules:
+# 	Mux4to1_5
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit {D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/Mux2to1_5.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux2to1_5
+# 
+# Top level modules:
+# 	Mux2to1_5
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit {D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/Mux2to1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux2to1
+# 
+# Top level modules:
+# 	Mux2to1
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit {D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/HalfAdder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module HalfAdder
+# 
+# Top level modules:
+# 	HalfAdder
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit {D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FullAdder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FullAdder
+# 
+# Top level modules:
+# 	FullAdder
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit {D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FivebitXor.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FivebitXor
+# 
+# Top level modules:
+# 	FivebitXor
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit {D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FivebitOr.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Fivebitor
+# 
+# Top level modules:
+# 	Fivebitor
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit {D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FivebitAnd.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FivebitAnd
+# 
+# Top level modules:
+# 	FivebitAnd
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit {D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FiveBitAdder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FiveBitAdder
+# 
+# Top level modules:
+# 	FiveBitAdder
+# 
+vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/project01_Testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module project01_Testbench
+# 
+# Top level modules:
+# 	project01_Testbench
+vsim -voptargs=+acc work.project01_Testbench
+# vsim -voptargs=+acc work.project01_Testbench 
+# Loading work.project01_Testbench
+# Loading work.project01
+# Loading work.FiveBitAdder
+# ** Error: (vsim-3037) D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FiveBitAdder.v(10): Missing instance name in instantiation of 'FullAdder'.
+# 
+#         Region: /project01_Testbench/test/adder
+# ** Error: (vsim-3037) D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FiveBitAdder.v(11): Missing instance name in instantiation of 'FullAdder'.
+# 
+#         Region: /project01_Testbench/test/adder
+# ** Error: (vsim-3037) D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FiveBitAdder.v(12): Missing instance name in instantiation of 'FullAdder'.
+# 
+#         Region: /project01_Testbench/test/adder
+# ** Error: (vsim-3037) D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FiveBitAdder.v(13): Missing instance name in instantiation of 'FullAdder'.
+# 
+#         Region: /project01_Testbench/test/adder
+# ** Error: (vsim-3037) D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FiveBitAdder.v(14): Missing instance name in instantiation of 'FullAdder'.
+# 
+#         Region: /project01_Testbench/test/adder
+# Loading work.FivebitXor
+# Loading work.FivebitAnd
+# Loading work.Fivebitor
+# Loading work.Mux4to1_5
+# Loading work.Mux2to1_5
+# Loading work.Mux2to1
+# Error loading design
+vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit -O0 D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FiveBitAdder.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FiveBitAdder
+# 
+# Top level modules:
+# 	FiveBitAdder
+vsim -voptargs=+acc work.project01_Testbench
+# vsim -voptargs=+acc work.project01_Testbench 
+# Loading work.project01_Testbench
+# Loading work.project01
+# Loading work.FiveBitAdder
+# Loading work.FullAdder
+# Loading work.HalfAdder
+# Loading work.FivebitXor
+# Loading work.FivebitAnd
+# Loading work.Fivebitor
+# Loading work.Mux4to1_5
+# Loading work.Mux2to1_5
+# Loading work.Mux2to1
+# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/project01.v(12): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'cIn'. The port definition is at: D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FiveBitAdder.v(5).
+# 
+#         Region: /project01_Testbench/test/adder
+add wave -position insertpoint sim:/project01_Testbench/*
+run
+# time  =  0 , A = 00100 ,B = 00100 , S = 00 , R = 00100
+# time  = 20 , A = 10100 ,B = 00100 , S = 10 , R = 10100
+# time  = 40 , A = 00100 ,B = 10100 , S = 01 , R = 11000
+# time  = 60 , A = 00000 ,B = 00000 , S = 11 , R = 00000
