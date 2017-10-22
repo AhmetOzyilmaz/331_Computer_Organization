@@ -1,24 +1,55 @@
 .data
-    buffer: .space 20
+    buffer: .space 80
     msg1:   .asciiz "Enter As string like NN.NN O NN.NN :   "
     str2:  .asciiz "You wrote:\n"
+    str3:  .asciiz "input size is  :\n"
+
     newline:   .asciiz  "\n"
 .text
+#   $8 == input size 
 
 main:
     jal takeString #take input from user 
-    jal add_R;
-      
-
-add_R:
-
-subtract_R:
-
-multiply_R:   
+    jal printInputSize # print input
+   
 
     # Exit
     li  $v0,10      # exit
     syscall
+
+printInputSize:
+    ori      $8,$0,0        #  count = 0
+    la       $9,buffer      #  point at first c
+loop:   
+    lbu      $10,0($9)      # get the char
+    sll      $0,$0,0        # branch delay
+       
+    beq      $10,$0,done    # exit loop if char == null
+    sll      $0,$0,0        # branch delay
+
+    addiu    $8,$8,1        # count++
+    addiu    $9,$9,1        # point at the next char
+
+    j        loop
+    sll      $0,$0,0        # branch delay slot
+done:    
+    sll      $0,$0,0        # target for branch
+
+    la $a0, str3    # load and print "you wrote" string
+    li $v0, 4
+    syscall
+
+    move $a0,$8
+    li $v0, 1
+    syscall
+
+    # Print \n
+    li  $v0,4       # print_string syscall code = 4
+    la  $a0, newline
+    syscall
+    
+    jr $ra          # Jump to addr stored in $ra
+#end routine
 
 takeString:
 
