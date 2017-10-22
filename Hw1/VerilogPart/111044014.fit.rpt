@@ -1,5 +1,5 @@
 Fitter report for 111044014
-Tue Oct 17 23:38:26 2017
+Thu Oct 19 17:54:45 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Tue Oct 17 23:38:26 2017      ;
+; Fitter Status                      ; Successful - Thu Oct 19 17:54:45 2017      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; 111044014                                  ;
 ; Top-level Entity Name              ; project01                                  ;
@@ -218,7 +218,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/111044014.pin.
+The pin-out file can be found in D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/111044014.pin.
 
 
 +---------------------------------------------------------------------+
@@ -603,8 +603,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------+--------------+
 ; |project01                 ; 12 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 17   ; 0            ; 12 (0)       ; 0 (0)             ; 0 (0)            ; |project01                                       ; work         ;
 ;    |FiveBitAdder:adder|    ; 2 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; |project01|FiveBitAdder:adder                    ; work         ;
-;       |FullAdder:comb_4|   ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |project01|FiveBitAdder:adder|FullAdder:comb_4   ; work         ;
-;       |FullAdder:comb_5|   ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |project01|FiveBitAdder:adder|FullAdder:comb_5   ; work         ;
+;       |FullAdder:a2|       ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |project01|FiveBitAdder:adder|FullAdder:a2       ; work         ;
+;       |FullAdder:a3|       ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |project01|FiveBitAdder:adder|FullAdder:a3       ; work         ;
 ;    |Mux4to1_5:mf|          ; 10 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 10 (0)       ; 0 (0)             ; 0 (0)            ; |project01|Mux4to1_5:mf                          ; work         ;
 ;       |Mux2to1_5:m3|       ; 10 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 10 (0)       ; 0 (0)             ; 0 (0)            ; |project01|Mux4to1_5:mf|Mux2to1_5:m3             ; work         ;
 ;          |Mux2to1:m00|     ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |project01|Mux4to1_5:mf|Mux2to1_5:m3|Mux2to1:m00 ; work         ;
@@ -651,7 +651,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; B[0]                                               ;                   ;         ;
 ;      - Mux4to1_5:mf|Mux2to1_5:m3|Mux2to1:m00|out~0 ; 0                 ; 6       ;
 ;      - Mux4to1_5:mf|Mux2to1_5:m3|Mux2to1:m01|out~0 ; 0                 ; 6       ;
-;      - FiveBitAdder:adder|FullAdder:comb_4|cOut~0  ; 0                 ; 6       ;
+;      - FiveBitAdder:adder|FullAdder:a2|cOut~0      ; 0                 ; 6       ;
 ; S[0]                                               ;                   ;         ;
 ;      - Mux4to1_5:mf|Mux2to1_5:m3|Mux2to1:m00|out~0 ; 0                 ; 6       ;
 ;      - Mux4to1_5:mf|Mux2to1_5:m3|Mux2to1:m01|out~0 ; 0                 ; 6       ;
@@ -664,16 +664,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - Mux4to1_5:mf|Mux2to1_5:m3|Mux2to1:m04|out~2 ; 0                 ; 6       ;
 ; B[1]                                               ;                   ;         ;
 ;      - Mux4to1_5:mf|Mux2to1_5:m3|Mux2to1:m01|out~1 ; 0                 ; 6       ;
-;      - FiveBitAdder:adder|FullAdder:comb_4|cOut~0  ; 0                 ; 6       ;
+;      - FiveBitAdder:adder|FullAdder:a2|cOut~0      ; 0                 ; 6       ;
 ; A[1]                                               ;                   ;         ;
 ;      - Mux4to1_5:mf|Mux2to1_5:m3|Mux2to1:m01|out~1 ; 0                 ; 6       ;
-;      - FiveBitAdder:adder|FullAdder:comb_4|cOut~0  ; 0                 ; 6       ;
+;      - FiveBitAdder:adder|FullAdder:a2|cOut~0      ; 0                 ; 6       ;
 ; A[2]                                               ;                   ;         ;
 ;      - Mux4to1_5:mf|Mux2to1_5:m3|Mux2to1:m02|out~1 ; 0                 ; 6       ;
-;      - FiveBitAdder:adder|FullAdder:comb_5|cOut~0  ; 0                 ; 6       ;
+;      - FiveBitAdder:adder|FullAdder:a3|cOut~0      ; 0                 ; 6       ;
 ; B[2]                                               ;                   ;         ;
 ;      - Mux4to1_5:mf|Mux2to1_5:m3|Mux2to1:m02|out~1 ; 0                 ; 6       ;
-;      - FiveBitAdder:adder|FullAdder:comb_5|cOut~0  ; 0                 ; 6       ;
+;      - FiveBitAdder:adder|FullAdder:a3|cOut~0      ; 0                 ; 6       ;
 ; B[3]                                               ;                   ;         ;
 ;      - Mux4to1_5:mf|Mux2to1_5:m3|Mux2to1:m03|out~1 ; 0                 ; 6       ;
 ;      - Mux4to1_5:mf|Mux2to1_5:m3|Mux2to1:m04|out~0 ; 0                 ; 6       ;
@@ -702,8 +702,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; A[2]~input                                  ; 2       ;
 ; A[1]~input                                  ; 2       ;
 ; B[1]~input                                  ; 2       ;
-; FiveBitAdder:adder|FullAdder:comb_5|cOut~0  ; 2       ;
-; FiveBitAdder:adder|FullAdder:comb_4|cOut~0  ; 2       ;
+; FiveBitAdder:adder|FullAdder:a3|cOut~0      ; 2       ;
+; FiveBitAdder:adder|FullAdder:a2|cOut~0      ; 2       ;
 ; B[4]~input                                  ; 1       ;
 ; A[4]~input                                  ; 1       ;
 ; Mux4to1_5:mf|Mux2to1_5:m3|Mux2to1:m04|out~2 ; 1       ;
@@ -999,7 +999,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 8A does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  2 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  5 pins available
         Info (176213): I/O bank number 9 does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  0 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1017,18 +1017,18 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
-Info (144001): Generated suppressed messages file D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/111044014.fit.smsg
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (144001): Generated suppressed messages file D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/111044014.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 913 megabytes
-    Info: Processing ended: Tue Oct 17 23:38:26 2017
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Peak virtual memory: 925 megabytes
+    Info: Processing ended: Thu Oct 19 17:54:46 2017
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:09
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/111044014.fit.smsg.
+The suppressed messages can be found in D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/111044014.fit.smsg.
 
 

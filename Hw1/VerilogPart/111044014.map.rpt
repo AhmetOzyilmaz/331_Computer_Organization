@@ -1,5 +1,5 @@
 Analysis & Synthesis report for 111044014
-Tue Oct 17 23:40:19 2017
+Thu Oct 19 18:23:43 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -44,7 +44,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Oct 17 23:40:19 2017      ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct 19 18:23:43 2017      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; 111044014                                  ;
 ; Top-level Entity Name              ; project01                                  ;
@@ -167,16 +167,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                ; Library ;
 +----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
-; project01.v                      ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/project01.v    ;         ;
-; Mux4to1_5.v                      ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/Mux4to1_5.v    ;         ;
-; Mux2to1_5.v                      ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/Mux2to1_5.v    ;         ;
-; Mux2to1.v                        ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/Mux2to1.v      ;         ;
-; HalfAdder.v                      ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/HalfAdder.v    ;         ;
-; FullAdder.v                      ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FullAdder.v    ;         ;
-; FivebitXor.v                     ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FivebitXor.v   ;         ;
-; FivebitOr.v                      ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FivebitOr.v    ;         ;
-; FivebitAnd.v                     ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FivebitAnd.v   ;         ;
-; FiveBitAdder.v                   ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FiveBitAdder.v ;         ;
+; project01.v                      ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/project01.v    ;         ;
+; Mux4to1_5.v                      ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/Mux4to1_5.v    ;         ;
+; Mux2to1_5.v                      ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/Mux2to1_5.v    ;         ;
+; Mux2to1.v                        ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/Mux2to1.v      ;         ;
+; HalfAdder.v                      ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/HalfAdder.v    ;         ;
+; FullAdder.v                      ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FullAdder.v    ;         ;
+; FivebitXor.v                     ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitXor.v   ;         ;
+; FivebitOr.v                      ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitOr.v    ;         ;
+; FivebitAnd.v                     ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitAnd.v   ;         ;
+; FiveBitAdder.v                   ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FiveBitAdder.v ;         ;
 +----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
 
 
@@ -272,7 +272,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Oct 17 23:40:16 2017
+    Info: Processing started: Thu Oct 19 18:23:41 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 111044014 -c 111044014
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file project01_testbench.v
@@ -297,6 +297,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file fivebit
     Info (12023): Found entity 1: FivebitAnd
 Info (12021): Found 1 design units, including 1 entities, in source file fivebitadder.v
     Info (12023): Found entity 1: FiveBitAdder
+Info (12021): Found 1 design units, including 1 entities, in source file fivebitand_testbench.v
+    Info (12023): Found entity 1: FivebitAnd_Testbench
+Info (12021): Found 1 design units, including 1 entities, in source file fivebitor_testbench.v
+    Info (12023): Found entity 1: Fivebitor_Testbench
+Info (12021): Found 1 design units, including 1 entities, in source file fivebitxor_testbench.v
+    Info (12023): Found entity 1: FivebitXor_Testbench
+Info (12021): Found 1 design units, including 1 entities, in source file halfadder_testbench.v
+    Info (12023): Found entity 1: HalfAdder_Testbench
 Info (12127): Elaborating entity "project01" for the top level hierarchy
 Info (12128): Elaborating entity "FiveBitAdder" for hierarchy "FiveBitAdder:adder"
 Info (12128): Elaborating entity "FullAdder" for hierarchy "FiveBitAdder:adder|FullAdder:a1"
@@ -317,8 +325,8 @@ Info (21057): Implemented 29 device resources after synthesis - the final resour
     Info (21061): Implemented 12 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 556 megabytes
-    Info: Processing ended: Tue Oct 17 23:40:19 2017
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Thu Oct 19 18:23:43 2017
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

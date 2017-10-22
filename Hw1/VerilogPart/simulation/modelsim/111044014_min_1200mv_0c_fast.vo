@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
-// DATE "10/17/2017 23:38:40"
+// DATE "10/19/2017 17:55:01"
 
 // 
 // Device: Altera EP4CGX15BF14C6 Package FBGA169
@@ -88,11 +88,11 @@ wire \mf|m3|m01|out~0_combout ;
 wire \A[1]~input_o ;
 wire \mf|m3|m01|out~1_combout ;
 wire \B[2]~input_o ;
-wire \adder|comb_4|cOut~0_combout ;
+wire \adder|a2|cOut~0_combout ;
 wire \mf|m3|m02|out~0_combout ;
 wire \A[2]~input_o ;
 wire \mf|m3|m02|out~1_combout ;
-wire \adder|comb_5|cOut~0_combout ;
+wire \adder|a3|cOut~0_combout ;
 wire \mf|m3|m03|out~0_combout ;
 wire \B[3]~input_o ;
 wire \A[3]~input_o ;
@@ -292,28 +292,28 @@ defparam \B[2]~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: LCCOMB_X13_Y1_N22
-cycloneiv_lcell_comb \adder|comb_4|cOut~0 (
+cycloneiv_lcell_comb \adder|a2|cOut~0 (
 // Equation(s):
-// \adder|comb_4|cOut~0_combout  = (\B[1]~input_o  & ((\A[1]~input_o ) # ((\A[0]~input_o  & \B[0]~input_o )))) # (!\B[1]~input_o  & (\A[0]~input_o  & (\A[1]~input_o  & \B[0]~input_o )))
+// \adder|a2|cOut~0_combout  = (\B[1]~input_o  & ((\A[1]~input_o ) # ((\A[0]~input_o  & \B[0]~input_o )))) # (!\B[1]~input_o  & (\A[0]~input_o  & (\A[1]~input_o  & \B[0]~input_o )))
 
 	.dataa(\B[1]~input_o ),
 	.datab(\A[0]~input_o ),
 	.datac(\A[1]~input_o ),
 	.datad(\B[0]~input_o ),
 	.cin(gnd),
-	.combout(\adder|comb_4|cOut~0_combout ),
+	.combout(\adder|a2|cOut~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \adder|comb_4|cOut~0 .lut_mask = 16'hE8A0;
-defparam \adder|comb_4|cOut~0 .sum_lutc_input = "datac";
+defparam \adder|a2|cOut~0 .lut_mask = 16'hE8A0;
+defparam \adder|a2|cOut~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X13_Y1_N0
 cycloneiv_lcell_comb \mf|m3|m02|out~0 (
 // Equation(s):
-// \mf|m3|m02|out~0_combout  = (\S[0]~input_o  & (\adder|comb_4|cOut~0_combout  & !\S[1]~input_o )) # (!\S[0]~input_o  & ((\S[1]~input_o )))
+// \mf|m3|m02|out~0_combout  = (\S[0]~input_o  & (\adder|a2|cOut~0_combout  & !\S[1]~input_o )) # (!\S[0]~input_o  & ((\S[1]~input_o )))
 
-	.dataa(\adder|comb_4|cOut~0_combout ),
+	.dataa(\adder|a2|cOut~0_combout ),
 	.datab(\S[0]~input_o ),
 	.datac(\S[1]~input_o ),
 	.datad(gnd),
@@ -354,31 +354,31 @@ defparam \mf|m3|m02|out~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X13_Y1_N20
-cycloneiv_lcell_comb \adder|comb_5|cOut~0 (
+cycloneiv_lcell_comb \adder|a3|cOut~0 (
 // Equation(s):
-// \adder|comb_5|cOut~0_combout  = (\B[2]~input_o  & ((\adder|comb_4|cOut~0_combout ) # (\A[2]~input_o ))) # (!\B[2]~input_o  & (\adder|comb_4|cOut~0_combout  & \A[2]~input_o ))
+// \adder|a3|cOut~0_combout  = (\B[2]~input_o  & ((\adder|a2|cOut~0_combout ) # (\A[2]~input_o ))) # (!\B[2]~input_o  & (\adder|a2|cOut~0_combout  & \A[2]~input_o ))
 
 	.dataa(gnd),
 	.datab(\B[2]~input_o ),
-	.datac(\adder|comb_4|cOut~0_combout ),
+	.datac(\adder|a2|cOut~0_combout ),
 	.datad(\A[2]~input_o ),
 	.cin(gnd),
-	.combout(\adder|comb_5|cOut~0_combout ),
+	.combout(\adder|a3|cOut~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \adder|comb_5|cOut~0 .lut_mask = 16'hFCC0;
-defparam \adder|comb_5|cOut~0 .sum_lutc_input = "datac";
+defparam \adder|a3|cOut~0 .lut_mask = 16'hFCC0;
+defparam \adder|a3|cOut~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X13_Y1_N6
 cycloneiv_lcell_comb \mf|m3|m03|out~0 (
 // Equation(s):
-// \mf|m3|m03|out~0_combout  = (\S[0]~input_o  & (!\S[1]~input_o  & \adder|comb_5|cOut~0_combout )) # (!\S[0]~input_o  & (\S[1]~input_o ))
+// \mf|m3|m03|out~0_combout  = (\S[0]~input_o  & (!\S[1]~input_o  & \adder|a3|cOut~0_combout )) # (!\S[0]~input_o  & (\S[1]~input_o ))
 
 	.dataa(gnd),
 	.datab(\S[0]~input_o ),
 	.datac(\S[1]~input_o ),
-	.datad(\adder|comb_5|cOut~0_combout ),
+	.datad(\adder|a3|cOut~0_combout ),
 	.cin(gnd),
 	.combout(\mf|m3|m03|out~0_combout ),
 	.cout());
@@ -428,10 +428,10 @@ defparam \mf|m3|m03|out~1 .sum_lutc_input = "datac";
 // Location: LCCOMB_X13_Y1_N10
 cycloneiv_lcell_comb \mf|m3|m04|out~0 (
 // Equation(s):
-// \mf|m3|m04|out~0_combout  = (\adder|comb_5|cOut~0_combout  & ((\B[3]~input_o ) # (\A[3]~input_o ))) # (!\adder|comb_5|cOut~0_combout  & (\B[3]~input_o  & \A[3]~input_o ))
+// \mf|m3|m04|out~0_combout  = (\adder|a3|cOut~0_combout  & ((\B[3]~input_o ) # (\A[3]~input_o ))) # (!\adder|a3|cOut~0_combout  & (\B[3]~input_o  & \A[3]~input_o ))
 
 	.dataa(gnd),
-	.datab(\adder|comb_5|cOut~0_combout ),
+	.datab(\adder|a3|cOut~0_combout ),
 	.datac(\B[3]~input_o ),
 	.datad(\A[3]~input_o ),
 	.cin(gnd),

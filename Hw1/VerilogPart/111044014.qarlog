@@ -1,0 +1,27 @@
+Quartus II Archive log --	D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/111044014.qarlog
+
+Archive:	D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/111044014.qar
+Date:		Thu Oct 19 17:46:09 2017
+Quartus II 64-Bit		13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+	=========== Files Selected: ===========
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/111044014.qpf
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/111044014.qsf
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FiveBitAdder.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitAnd.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitOr.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitXor.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FullAdder.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/HalfAdder.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/Mux2to1.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/Mux2to1_5.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/Mux4to1_5.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/db/111044014.db_info
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/incremental_db/compiled_partitions/111044014.db_info
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/project01.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/project01_Testbench.v
+c:/altera/13.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 16 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

@@ -2,233 +2,233 @@ m255
 K3
 13
 cModel Technology
-Z0 dD:\2017-2018\Organizasyon\Codes\331_Computer_organization\Hw1\homework1\edit\simulation\modelsim
+Z0 dD:\2017-2018\Organizasyon\Projects\331_Computer_Organization\Hw1\VerilogPart\simulation\modelsim
 vFiveBitAdder
-!i10b 1
-!s100 IkL=jL`N1Fd@V^TC_jZJg2
-IMEMgfgj?if`R^MfgUJYiE1
 V6SU0;2P3TcC=m62KWg^Zj3
-Z1 dD:\2017-2018\Organizasyon\Codes\331_Computer_organization\Hw1\homework1\edit\simulation\modelsim
+r1
+31
+I3Hd8M;;o>F9WYC;d4?OU61
+Z1 dD:\2017-2018\Organizasyon\Projects\331_Computer_Organization\Hw1\VerilogPart\simulation\modelsim
 w1508272812
-8D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FiveBitAdder.v
-FD:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FiveBitAdder.v
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FiveBitAdder.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FiveBitAdder.v
 L0 1
 Z2 OV;L;10.1d;51
-r1
-!s85 0
-31
-!s108 1508272828.169000
-!s107 D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FiveBitAdder.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit|-O0|D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FiveBitAdder.v|
-!s101 -O0
 Z3 o-vlog01compat -work work -O0
-Z4 !s92 -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart -O0
 n@five@bit@adder
+!i10b 1
+!s85 0
+!s100 nngbK`lIZ040SAc`jV2hL1
+!s108 1508426178.118000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FiveBitAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FiveBitAdder.v|
+!s101 -O0
 vFivebitAnd
-IEj4Qad4o:[IDOL>@9EDjW2
 VZ2e?CX_Y_ZGgkiBXCYMC73
+r1
+31
+I046_06je9>=^fcZ2P54=k3
 R1
 w1508264392
-8D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FivebitAnd.v
-FD:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FivebitAnd.v
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitAnd.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitAnd.v
 L0 1
 R2
-r1
-31
 R3
 R4
 n@fivebit@and
 !i10b 1
-!s100 e;Y^iOLD>Sfc6hanS[UC<1
 !s85 0
-!s108 1508272741.940000
-!s107 D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FivebitAnd.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit|D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FivebitAnd.v|
+!s100 TIlCbD6T`Z^]NHmR_kHoo0
+!s108 1508426177.965000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitAnd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitAnd.v|
 !s101 -O0
-vFivebitor
-IW?>^5n?263VihM47>[`T43
-V__1M`Ed9mh1l19O:mc:5P2
+vFivebitAnd_Testbench
+!i10b 1
+!s100 66B_eK<BkIYzG5;Te67`81
+Iblkczn1ZMN>SR[>UTbeZm1
+VkHdQ]D6KEaad26TjVNF_G1
 R1
-w1508264398
-8D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FivebitOr.v
-FD:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FivebitOr.v
+w1508426148
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitAnd_Testbench.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitAnd_Testbench.v
 L0 1
 R2
 r1
+!s85 0
 31
+!s108 1508426194.823000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitAnd_Testbench.v|
+!s90 -reportprogress|300|-work|work|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitAnd_Testbench.v|
+!s101 -O0
+o-work work -O0
+n@fivebit@and_@testbench
+vFivebitor
+V__1M`Ed9mh1l19O:mc:5P2
+r1
+31
+IeAhh0A;aa^R4Q9eKW5a;i1
+R1
+w1508264398
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitOr.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitOr.v
+L0 1
+R2
 R3
 R4
 n@fivebitor
 !i10b 1
-!s100 KAaO^Ab<EoMB@neDL3gm_2
 !s85 0
-!s108 1508272741.786000
-!s107 D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FivebitOr.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit|D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FivebitOr.v|
+!s100 nCGe1;a_b7DPIB37gJHRI1
+!s108 1508426177.799000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitOr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitOr.v|
 !s101 -O0
 vFivebitXor
-I5Ok:LmV4o2hDo3OX[3:IK3
 VbDjnL:^FAYHK:GHdGnZ^l2
-R1
-w1508264396
-8D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FivebitXor.v
-FD:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FivebitXor.v
-L0 1
-R2
 r1
 31
+I7maUgo^n17^APK3JHg9MO3
+R1
+w1508264396
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitXor.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitXor.v
+L0 1
+R2
 R3
 R4
 n@fivebit@xor
 !i10b 1
-!s100 DEUHaa_Rb7G9ASFCWHiLl2
 !s85 0
-!s108 1508272741.631000
-!s107 D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FivebitXor.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit|D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FivebitXor.v|
+!s100 ?L9eddV5Y_0lkOR;g223b2
+!s108 1508426177.613000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitXor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FivebitXor.v|
 !s101 -O0
 vFullAdder
-IJXKEijWgcH8E>hL1769EO3
 VnNa1D`fad;<Kg6H`oJSn83
-R1
-w1508271647
-8D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FullAdder.v
-FD:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FullAdder.v
-L0 1
-R2
 r1
 31
+IE9<TVJ6mKO0cEY>Qi:kUh0
+R1
+w1508271647
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FullAdder.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FullAdder.v
+L0 1
+R2
 R3
 R4
 n@full@adder
 !i10b 1
-!s100 _6gPODHbUN?lID<>3olmK2
 !s85 0
-!s108 1508272741.448000
-!s107 D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FullAdder.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit|D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/FullAdder.v|
+!s100 :zP0IWk_9eoaO5FMllgQZ1
+!s108 1508426177.459000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FullAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/FullAdder.v|
 !s101 -O0
 vHalfAdder
-I8RcPY6z<Z<K<TLD_oAXlL3
 V@_Md>giQQ3Jz4g1CzYLd?0
-R1
-w1508271808
-8D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/HalfAdder.v
-FD:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/HalfAdder.v
-L0 1
-R2
 r1
 31
+I8`a>h@U_mH?l5N:URbz]@2
+R1
+w1508271808
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/HalfAdder.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/HalfAdder.v
+L0 1
+R2
 R3
 R4
 n@half@adder
 !i10b 1
-!s100 `DDL?5]IEM<<;QR=hCYDG2
 !s85 0
-!s108 1508272741.247000
-!s107 D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/HalfAdder.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit|D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/HalfAdder.v|
+!s100 IhF2dTCW@BK_b2m`@1XVe3
+!s108 1508426177.341000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/HalfAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/HalfAdder.v|
 !s101 -O0
 vMux2to1
-ILZCSRzEG7_4YDK1N;RN_O2
 V9PV=^b6cf>I<lnUcFczSG0
-R1
-w1508269582
-8D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/Mux2to1.v
-FD:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/Mux2to1.v
-L0 1
-R2
 r1
 31
+IU:JQm?RoeYYRVH1B@l?c]3
+R1
+w1508269582
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/Mux2to1.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/Mux2to1.v
+L0 1
+R2
 R3
 R4
 n@mux2to1
 !i10b 1
-!s100 1K92AUV;Tb[O<4PHV@ESg2
 !s85 0
-!s108 1508272741.059000
-!s107 D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/Mux2to1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit|D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/Mux2to1.v|
+!s100 ]5cU:dTA>2JBc80eJ5Q3z1
+!s108 1508426177.208000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/Mux2to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/Mux2to1.v|
 !s101 -O0
 vMux2to1_5
-Ijdcz`k;5=aA17S7>FmGzD3
 V2XPJmBnF[E475Ca<NLCV30
-R1
-w1508269563
-8D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/Mux2to1_5.v
-FD:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/Mux2to1_5.v
-L0 1
-R2
 r1
 31
+InOCJEALalZ;5FPRAi>Bd22
+R1
+w1508269563
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/Mux2to1_5.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/Mux2to1_5.v
+L0 1
+R2
 R3
 R4
 n@mux2to1_5
 !i10b 1
-!s100 SbRHo0B=4A3jT7ndgMf]i2
 !s85 0
-!s108 1508272740.863000
-!s107 D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/Mux2to1_5.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit|D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/Mux2to1_5.v|
+!s100 za:eM421B9]UM<MdY50di2
+!s108 1508426177.041000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/Mux2to1_5.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/Mux2to1_5.v|
 !s101 -O0
 vMux4to1_5
-I9Gjl9C<E34T]Qz]=GgUbm2
 VUEA3fij^E;<MY^XeaVIJS0
-R1
-w1508269658
-8D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/Mux4to1_5.v
-FD:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/Mux4to1_5.v
-L0 1
-R2
 r1
 31
+IfAeY7mjzzCk;Yo^O;5IP@0
+R1
+w1508269658
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/Mux4to1_5.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/Mux4to1_5.v
+L0 1
+R2
 R3
 R4
 n@mux4to1_5
 !i10b 1
-!s100 5=8ObS`eCZeWhnFgFnDS31
 !s85 0
-!s108 1508272740.649000
-!s107 D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/Mux4to1_5.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit|D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/Mux4to1_5.v|
+!s100 Gofd=1m_6;lRkQ2=:`[@61
+!s108 1508426176.916000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/Mux4to1_5.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/Mux4to1_5.v|
 !s101 -O0
 vproject01
-IcoNQ?abF3TS14bMSj^2BJ0
 V2a<b8R6;4b0jjHKIoO15=1
-R1
-w1508272603
-8D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/project01.v
-FD:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/project01.v
-L0 1
-R2
 r1
 31
+I?zbgPAaXVoWBIU`gk5FHQ2
+R1
+w1508272603
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/project01.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/project01.v
+L0 1
+R2
 R3
 R4
 !i10b 1
-!s100 oX2ihmjF5d41Z7Rei33oA1
 !s85 0
-!s108 1508272740.128000
-!s107 D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/project01.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit|D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/project01.v|
-!s101 -O0
-vproject01_Testbench
-IYO1QS[O7ffKeYbJUGnVS@0
-VBFR>VJ4a?YiUcQW5iE<>V0
-R1
-w1508270255
-8D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/project01_Testbench.v
-FD:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/project01_Testbench.v
-L0 1
-R2
-r1
-31
-o-work work -O0
-nproject01_@testbench
-!i10b 1
-!s100 MJW^5b_f60ROC8<jBT`z:0
-!s85 0
-!s108 1508272749.124000
-!s107 D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/project01_Testbench.v|
-!s90 -reportprogress|300|-work|work|D:/2017-2018/Organizasyon/Codes/331_Computer_organization/Hw1/homework1/edit/project01_Testbench.v|
+!s100 >8Qe7=EcH=RKjJeQz>d`;0
+!s108 1508426175.322000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/project01.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw1/VerilogPart/project01.v|
 !s101 -O0

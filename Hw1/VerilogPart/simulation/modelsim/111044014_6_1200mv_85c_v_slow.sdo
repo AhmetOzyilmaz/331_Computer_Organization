@@ -29,7 +29,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "project01")
-  (DATE "10/17/2017 23:38:41")
+  (DATE "10/19/2017 17:55:01")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition")
@@ -199,7 +199,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_lcell_comb")
-    (INSTANCE adder\|comb_4\|cOut\~0)
+    (INSTANCE adder\|a2\|cOut\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3128:3128:3128) (3392:3392:3392))
@@ -254,7 +254,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_lcell_comb")
-    (INSTANCE adder\|comb_5\|cOut\~0)
+    (INSTANCE adder\|a3\|cOut\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3547:3547:3547) (3802:3802:3802))
