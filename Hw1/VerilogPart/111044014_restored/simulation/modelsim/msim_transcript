@@ -1,0 +1,73 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do 111044014_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored {C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/project01.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module project01
+# 
+# Top level modules:
+# 	project01
+# vlog -vlog01compat -work work +incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored {C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/Mux4to1_5.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux4to1_5
+# 
+# Top level modules:
+# 	Mux4to1_5
+# vlog -vlog01compat -work work +incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored {C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/Mux2to1_5.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux2to1_5
+# 
+# Top level modules:
+# 	Mux2to1_5
+# vlog -vlog01compat -work work +incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored {C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/Mux2to1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux2to1
+# 
+# Top level modules:
+# 	Mux2to1
+# vlog -vlog01compat -work work +incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored {C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/HalfAdder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module HalfAdder
+# 
+# Top level modules:
+# 	HalfAdder
+# vlog -vlog01compat -work work +incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored {C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FullAdder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FullAdder
+# 
+# Top level modules:
+# 	FullAdder
+# vlog -vlog01compat -work work +incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored {C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FivebitXor.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FivebitXor
+# 
+# Top level modules:
+# 	FivebitXor
+# vlog -vlog01compat -work work +incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored {C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FivebitOr.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Fivebitor
+# 
+# Top level modules:
+# 	Fivebitor
+# vlog -vlog01compat -work work +incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored {C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FivebitAnd.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FivebitAnd
+# 
+# Top level modules:
+# 	FivebitAnd
+# vlog -vlog01compat -work work +incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored {C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FiveBitAdder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FiveBitAdder
+# 
+# Top level modules:
+# 	FiveBitAdder
+# 

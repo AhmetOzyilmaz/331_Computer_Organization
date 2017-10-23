@@ -1,0 +1,214 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Espanyol\Desktop\GitReposityoy\331_Computer_Organization\Hw1\VerilogPart\111044014_restored\simulation\modelsim
+vFiveBitAdder
+!i10b 1
+!s100 4K2fPREd@VYaSV:XBKUM?3
+I9mDWO9MJcajT[Y?B3R5440
+V6SU0;2P3TcC=m62KWg^Zj3
+Z1 dC:\Users\Espanyol\Desktop\GitReposityoy\331_Computer_Organization\Hw1\VerilogPart\111044014_restored\simulation\modelsim
+w1508272812
+8C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FiveBitAdder.v
+FC:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FiveBitAdder.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1508760444.743000
+!s107 C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FiveBitAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored|C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FiveBitAdder.v|
+!s101 -O0
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored -O0
+n@five@bit@adder
+vFivebitAnd
+I1bRVh5ZBfZm^T8GBM^G]i0
+VZ2e?CX_Y_ZGgkiBXCYMC73
+R1
+w1508264392
+8C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FivebitAnd.v
+FC:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FivebitAnd.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@fivebit@and
+!i10b 1
+!s100 Ek7:Rh52W[RDMnVCa6omG2
+!s85 0
+!s108 1508760444.639000
+!s107 C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FivebitAnd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored|C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FivebitAnd.v|
+!s101 -O0
+vFivebitor
+I8EZHTH82CN=H73WVBPlAd2
+V__1M`Ed9mh1l19O:mc:5P2
+R1
+w1508264398
+8C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FivebitOr.v
+FC:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FivebitOr.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@fivebitor
+!i10b 1
+!s100 7jMPd5MJ8c0`B?7O?4H5c3
+!s85 0
+!s108 1508760444.559000
+!s107 C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FivebitOr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored|C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FivebitOr.v|
+!s101 -O0
+vFivebitXor
+I4SMA5AYd6CKXLDd71?[3E3
+VbDjnL:^FAYHK:GHdGnZ^l2
+R1
+w1508264396
+8C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FivebitXor.v
+FC:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FivebitXor.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@fivebit@xor
+!i10b 1
+!s100 balGo8]NXg2fAOn2TZ@@Q2
+!s85 0
+!s108 1508760444.476000
+!s107 C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FivebitXor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored|C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FivebitXor.v|
+!s101 -O0
+vFullAdder
+I[BZVeM`^DW<BCDiUT3egi2
+VnNa1D`fad;<Kg6H`oJSn83
+R1
+w1508271647
+8C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FullAdder.v
+FC:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FullAdder.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@full@adder
+!i10b 1
+!s100 hPU:Y@PEQlT<k9X5S>[JY0
+!s85 0
+!s108 1508760444.395000
+!s107 C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FullAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored|C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/FullAdder.v|
+!s101 -O0
+vHalfAdder
+IbTWdac>XKB@Zf6nH5@ifg1
+V@_Md>giQQ3Jz4g1CzYLd?0
+R1
+w1508271808
+8C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/HalfAdder.v
+FC:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/HalfAdder.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@half@adder
+!i10b 1
+!s100 =2]<eOZaG;1`<TZ6Olg9L1
+!s85 0
+!s108 1508760444.293000
+!s107 C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/HalfAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored|C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/HalfAdder.v|
+!s101 -O0
+vMux2to1
+I;bIY=CFJPW5F0cHC_0YQR2
+V9PV=^b6cf>I<lnUcFczSG0
+R1
+w1508269582
+8C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/Mux2to1.v
+FC:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/Mux2to1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@mux2to1
+!i10b 1
+!s100 Z4g<f9YZ06]O5R:HaF]B51
+!s85 0
+!s108 1508760444.206000
+!s107 C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/Mux2to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored|C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/Mux2to1.v|
+!s101 -O0
+vMux2to1_5
+I<=e5@JBLK6VM?_iZ=BULJ0
+V2XPJmBnF[E475Ca<NLCV30
+R1
+w1508269563
+8C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/Mux2to1_5.v
+FC:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/Mux2to1_5.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@mux2to1_5
+!i10b 1
+!s100 QT<b2OzlFIjdN0Maoniz52
+!s85 0
+!s108 1508760444.128000
+!s107 C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/Mux2to1_5.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored|C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/Mux2to1_5.v|
+!s101 -O0
+vMux4to1_5
+IIjO8`BR<>Yhz58mUUVO=H1
+VUEA3fij^E;<MY^XeaVIJS0
+R1
+w1508269658
+8C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/Mux4to1_5.v
+FC:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/Mux4to1_5.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@mux4to1_5
+!i10b 1
+!s100 9<?SFkAkUaccC2O2om;2h1
+!s85 0
+!s108 1508760444.032000
+!s107 C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/Mux4to1_5.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored|C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/Mux4to1_5.v|
+!s101 -O0
+vproject01
+InQIIk;J2>[CUZCo5DMSd02
+V2a<b8R6;4b0jjHKIoO15=1
+R1
+w1508272603
+8C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/project01.v
+FC:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/project01.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 8G7?]3f>hEe6FT44<YNC11
+!s85 0
+!s108 1508760443.940000
+!s107 C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/project01.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored|C:/Users/Espanyol/Desktop/GitReposityoy/331_Computer_Organization/Hw1/VerilogPart/111044014_restored/project01.v|
+!s101 -O0

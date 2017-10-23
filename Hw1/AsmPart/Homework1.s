@@ -1,22 +1,41 @@
-.data
-    buffer: .space 80
+	.data
+buffer: .space 80
     msg1:   .asciiz "Enter As string like NN.NN O NN.NN :   "
     str2:  .asciiz "You wrote:\n"
     str3:  .asciiz "input size is  :\n"
-
     newline:   .asciiz  "\n"
-.text
-#   $8 == input size 
-
+	.text
 main:
     jal takeString #take input from user 
-    jal printInputSize # print input
-   
+    jal printInputSize # print input	
+	
+	la $9,buffer      #  address of input
+   	lb $8, 0($9)
+    move $10, $8 # adress 8 deki sayıyı  10.adrese ata
+  	sub $10,$10,0x2D # - ilk eleman - ise negatiftir ise
+  	beq $10,$0 add_SR
+    move $10, $8 # adress 8 deki sayıyı  10.adrese ata
+  	sub $10,$10,0x2B # + ise
+  	beq $10,$0 substract_SR
+
+ 	# Print first elemen input
+ 	 #	add $9,$9,1
+   	#lb $8, 0($9)
+    #li  $v0,11      # print elemen in array 
+    #move  $a0, $8
+    #syscall
 
     # Exit
     li  $v0,10      # exit
     syscall
 
+add_SR:
+
+substract_SR:
+
+multiply_SR:
+
+#end main
 printInputSize:
     ori      $8,$0,0        #  count = 0
     la       $9,buffer      #  point at first c

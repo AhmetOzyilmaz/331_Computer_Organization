@@ -12,11 +12,13 @@
 # Start .text segment (program code)
 
 
-la $a0, buffer  # reload byte space to primary address
-    move $a0
-    la $a0, str2    # load and print "you wrote" string
-    li $v0, 4
-    syscall, $t0   # primary address = t0 address (load pointer)
-    li $v0, 4       # print string
-    syscall
 
+#   $8 == return size func
+
+#   $11 == return size func
+#	$13 == ilk sayı float size
+#	$14 == ikinci sayı decimal size
+#	$15 == ikinci sayı float size
+#	$16 == eğer 1. sayı negatifse  1 pozitifse 0
+#	$17 == eğer 2. sayı negatifse  1 pozitifse 0
+#start main
