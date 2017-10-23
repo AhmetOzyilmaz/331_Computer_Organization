@@ -1,5 +1,5 @@
 Archive Project report for 111044014
-Thu Oct 19 17:46:09 2017
+Mon Oct 23 16:06:13 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -35,10 +35,10 @@ applicable agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Thu Oct 19 17:46:09 2017 ;
+; Archive Project Status ; Successful - Mon Oct 23 16:06:13 2017 ;
 ; Revision Name          ; 111044014                             ;
 ; Top-level Entity Name  ; project01                             ;
-; Family                 ; Cyclone IV GX                         ;
+; Family                 ; Cyclone III                           ;
 +------------------------+---------------------------------------+
 
 
@@ -57,7 +57,7 @@ Info: Generated report '111044014.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/altera/13.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus II 64-Bit Shell was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 362 megabytes
-    Info: Processing ended: Thu Oct 19 17:46:09 2017
+    Info: Processing ended: Mon Oct 23 16:06:13 2017
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -70,13 +70,18 @@ Info: Quartus II 64-Bit Shell was successful. 0 errors, 0 warnings
 ; 111044014.qpf                                        ;
 ; 111044014.qsf                                        ;
 ; c:/altera/13.1/quartus/bin64/assignment_defaults.qdf ;
+; db/111044014.cmp.hdb                                 ;
 ; db/111044014.db_info                                 ;
 ; FiveBitAdder.v                                       ;
 ; FivebitAnd.v                                         ;
+; FivebitAnd_Testbench.v                               ;
 ; FivebitOr.v                                          ;
+; Fivebitor_Testbench.v                                ;
 ; FivebitXor.v                                         ;
+; FivebitXor_Testbench.v                               ;
 ; FullAdder.v                                          ;
 ; HalfAdder.v                                          ;
+; HalfAdder_Testbench.v                                ;
 ; incremental_db/compiled_partitions/111044014.db_info ;
 ; Mux2to1.v                                            ;
 ; Mux2to1_5.v                                          ;
