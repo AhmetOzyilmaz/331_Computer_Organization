@@ -10,46 +10,24 @@ main:
     jal printInputSize # print input	
 	
 	la $9,buffer      #  address of input
-   	lb $8, 0($9)      #  ilk adresdeki byte ı al
+   	lb $8, 0($9)
     move $10, $8 # adress 8 deki sayıyı  10.adrese ata
   	sub $10,$10,0x2D # - ilk eleman - ise negatiftir ise
   	beq $10,$0 add_SR
     move $10, $8 # adress 8 deki sayıyı  10.adrese ata
-  	sub $10,$10,0x2D # - ise #constrol is first elemen is negative
-  	beq $10,$0 IsNegative1 # değilse ilk sayının int ve float kısımkarını ve sayılarını size bilgilerini ve ve kendini alıcaz
-    jal 1NDP # ilk sayının decimal partını alıcak
+  	sub $10,$10,0x2B # + ise
+  	beq $10,$0 substract_SR
 
- 
+ 	# Print first elemen input
+ 	 #	add $9,$9,1
+   	#lb $8, 0($9)
+    #li  $v0,11      # print elemen in array 
+    #move  $a0, $8
+    #syscall
+
     # Exit
     li  $v0,10      # exit
     syscall
-
-1NDP:#first number decimal part
-    lb $8, 0($9)      #  ilk adresdeki byte ı al
-    move $10, $8 # index deki elemanı al
-    jal IsDigit #   $18 == is digit se 1 değilse 0 olucak
-    bgt $18,1
-
-    jr $ra          # Jump to addr stored in $ra
-IsDigitSe: #ilk elemanı 10 kere topla sonra ikinci elemanla topla
-   
-Sum10Times:
-    
-    j 1NDP         # Jump to addr stored in $ra
-
-IsDigit: # $10 adress
-    sub $10,$10,0x30 # array[0]-=0 
-    ble $10,$0
-    
-    jr $ra          # Jump to addr stored in $ra
-
-NotNegative1:
-    ori $16,$0,0
-    jr $ra 
-IsNegative1:
-    ori $16,$0,1
-    jr $ra          # Jump to addr stored in $ra
-
 
 add_SR:
 
