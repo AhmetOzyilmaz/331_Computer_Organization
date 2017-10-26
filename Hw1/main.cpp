@@ -38,14 +38,14 @@ void DoCalculation(char * a)
 
 	control = IsDigit(a[i]);
 
-	if (control == 0) { // sayý deðil
+	if (control == 0) { // sayÃ½ deÃ°il
 		number1IsPozitif = 1; //number1 < 0;
 		++i;
-	}*/
+	}
 
 	for (; i < size; ++i) {
 		control = IsDigit(a[i]);
-		if (control == 1) // sayý ise 
+		if (control == 1) // sayÃ½ ise 
 		{
 			number1Decimal *= 10;
 			number1Decimal += a[i] - 48 ;
@@ -54,7 +54,8 @@ void DoCalculation(char * a)
 		else 
 			break;
 	}
-	++i; // noktayý geçtik 
+	*/
+	++i; // noktayÃ½ geÃ§tik 
 
 	//cout << a[i] << endl;
 
@@ -72,8 +73,8 @@ void DoCalculation(char * a)
 	
 	++i; //operatore geldi
 
-	char k = a[i]; // hangi opertor olduðunu sakla 
-	++i;//boþluk
+	char k = a[i]; // hangi opertor olduÃ°unu sakla 
+	++i;//boÃ¾luk
 	++i;
 
 
@@ -82,7 +83,7 @@ void DoCalculation(char * a)
 	cout << "**** a[i] *--->" << a[i] << endl;
 	cout << "**** control *--->" << control << endl;
 
-	if (control == 0) { // is digit deðil 
+	if (control == 0) { // is digit deÃ°il 
 		number2IsPozitif = 1; //number2 < 0;
 		++i;
 	}
@@ -98,7 +99,7 @@ void DoCalculation(char * a)
 		else
 			break;
 	}
-	++i; // noktayý geçtik 
+	++i; // noktayÃ½ geÃ§tik 
 
 	for (; i < size; ++i) {
 		control = IsDigit(a[i]);
@@ -150,7 +151,7 @@ void DoCalculation(char * a)
 void  ADD() {
 	if (number1IsPozitif == 0 && number2IsPozitif == 0) {
 		// + + +
-		// float kýsmýný topla
+		// float kÃ½smÃ½nÃ½ topla
 		resultFloat = number1Float + number2Float;
 		int check = resultFloat;
 		for (size_t i = 0; i < number1Float; i++)
@@ -171,8 +172,8 @@ void  ADD() {
 		}
 
 		resultIsPozitif = 0;
-		/* eðer result float ýn size ý number 1 dem büyükse resultDecimal i  1 arttýr */
-		//decimal kýsmý toplama
+		/* eÃ°er result float Ã½n size Ã½ number 1 dem bÃ¼yÃ¼kse resultDecimal i  1 arttÃ½r */
+		//decimal kÃ½smÃ½ toplama
 	}
 	else if (number1IsPozitif == 0 && number2IsPozitif == 1) {
 		// + + -
@@ -197,7 +198,7 @@ void  ADD() {
 			temp /= 10;
 			++resultDecimalSize;
 		}
-		// size fonksiyonun çaðýr resultDecimal size a ata
+		// size fonksiyonun Ã§aÃ°Ã½r resultDecimal size a ata
 		if (resultDecimal < 0)
 			resultIsPozitif = 1; //result < 0
 		else
@@ -216,7 +217,7 @@ void  ADD() {
 
 			resultFloatSize = number2FloatSize;
 			resultDecimal = number2Decimal - number1Decimal;
-			// size fonksiyonun çaðýr resultDecimal size a ata
+			// size fonksiyonun Ã§aÃ°Ã½r resultDecimal size a ata
 			if (resultDecimal < 0)
 				resultIsPozitif = 1; //result < 0
 			else
@@ -255,30 +256,30 @@ void SUB() {
 
 	if (number1IsPozitif == 0 && number2IsPozitif == 0) {
 		// + - + 
-		number2IsPozitif = 1; // number 2 negatif gibi davransýn 
+		number2IsPozitif = 1; // number 2 negatif gibi davransÃ½n 
 		ADD();
-		number2IsPozitif = 0; // number 2 negatif gibi davransýn 
+		number2IsPozitif = 0; // number 2 negatif gibi davransÃ½n 
 
 	}
 	else if (number1IsPozitif == 0 && number2IsPozitif ==1 ) {
 		// + - -
-		number2IsPozitif = 0; // number 2 pozitif gibi davransýn
+		number2IsPozitif = 0; // number 2 pozitif gibi davransÃ½n
 		ADD();
-		number2IsPozitif = 1; // number 2 negatif gibi davransýn 
+		number2IsPozitif = 1; // number 2 negatif gibi davransÃ½n 
 
 	}
 	else if (number1IsPozitif == 1 && number2IsPozitif == 0) {
 		// - - +
-		number2IsPozitif = 1; // number 2 negatif gibi davransýn 
+		number2IsPozitif = 1; // number 2 negatif gibi davransÃ½n 
 		ADD();
-		number2IsPozitif = 0; // number 2 negatif gibi davransýn 
+		number2IsPozitif = 0; // number 2 negatif gibi davransÃ½n 
 
 	}
 	else if (number1IsPozitif == 1 && number2IsPozitif == 1) {
 		// - - -
-		number2IsPozitif = 0; // number 2 negatif gibi davransýn
+		number2IsPozitif = 0; // number 2 negatif gibi davransÃ½n
 		ADD();
-		number2IsPozitif = 1; // number 2 negatif gibi davransýn
+		number2IsPozitif = 1; // number 2 negatif gibi davransÃ½n
 
 	}
 }
@@ -286,7 +287,7 @@ void MULT() {
 
 	if (number1IsPozitif >= 0 && number2IsPozitif >= 0) {
 		// + * + 
-		// döngü içinde tolasýn sonuç  + 
+		// dÃ¶ngÃ¼ iÃ§inde tolasÃ½n sonuÃ§  + 
 		resultIsPozitif = 0; // result > 0 
 	}
 	else if (number1IsPozitif >= 0 && number2IsPozitif < 0) {
