@@ -7,15 +7,34 @@ main: # DoCalculation
     jal IntialRegister # intialize input registers   
     
     la $9,MyArr      #  address of input
+    add $9,$9,$27    
     lb $8, 0($9)      #  ilk adresdeki byte ı al
     jal  IsDigit  # $8 == a[i];
     beq $30,$0 ControlIsZero #if control == 0 a[i] is not digit
-
-
+ForN1DP: #for (; i < size; ++i) {
+    jal  IsDigit  # control = IsDigit(a[i]);
+    beq  $30,$0 C_ForN1DP  #control == 0  break loop
+    li   $7,0 # temp variable is zero
+                #todo ra daki değeri sakla
+    jal  ControlIsOne # if (control == 1) // sayı ise 
+    bge  $27,$11 C_ForN1DP # index >= size break
+    j ForN1DP # back 
+C_ForN1DP:
+    add $27,$27,1 # ++i; // noktayı geçtik 
 Halt:
     # Exit
     li  $v0,10      # exit
     syscall
+
+ControlIsOne: # if control == 1
+    add $14,$14,$14 # number1Decimal *= 10;
+    add $7,$7,1     # counter is 10 break
+    ble $7 ,10 ControlIsOne #counter <=10 ken dön 
+    sub $14,$14,48   #number1Decimal-= 48;
+    add $9,$9,$27    
+    lb $8, 0($9)      #  ilk adresdeki byte ı al
+    add $19,$19,1    # ++number1DecimalSize;
+    jr  $ra          # Jump to addr stored in $ra
 
 ControlIsZero:
     li  $16,1 #number1IsPozitif = 1
