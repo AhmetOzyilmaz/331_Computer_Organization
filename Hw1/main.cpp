@@ -4,25 +4,6 @@
 
 using namespace std;
 
-int number1Decimal = 0;
-int number1Float = 0;
-int number2Decimal = 0;
-int number2Float = 0;
-
-int number1IsPozitif = 0;
-int number2IsPozitif = 0;
-int resultIsPozitif = 0;
-
-
-int number1DecimalSize = 0;
-int number1FloatSize = 0;
-int number2DecimalSize = 0;
-int number2FloatSize = 0;
-
-int resultDecimal = 0;
-int resultFloat = 0;
-int resultDecimalSize = 0;
-int resultFloatSize = 0;
 int IsDigit(char t);
 int CheckOperator(char t);
 void ADD();
@@ -30,7 +11,7 @@ void SUB();
 void MULT();
 void DoCalculation(char * a)
 {
-	 number1Decimal = 0;
+/*	 number1Decimal = 0;
 	 number1Float = 0;
 	 number2Decimal = 0;
 	 number2Float = 0;
@@ -51,6 +32,7 @@ void DoCalculation(char * a)
 	 resultFloatSize = 0;
 
 	int size = strlen(a);
+	
 	int control = 0;
 	int i = 0;
 
@@ -59,7 +41,7 @@ void DoCalculation(char * a)
 	if (control == 0) { // sayý deðil
 		number1IsPozitif = 1; //number1 < 0;
 		++i;
-	}
+	}*/
 
 	for (; i < size; ++i) {
 		control = IsDigit(a[i]);

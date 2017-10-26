@@ -1,14 +1,55 @@
-	.data
-MyArr: .space 80
-    msg1:   .asciiz "Enter As string like NN.NN O NN.NN :   "
-    str2:  .asciiz "You wrote:\n"
-    str3:  .asciiz "input size is  :\n"
-    newline:   .asciiz  "\n"
-	.text
+    .text
+    .globl main #starting point: must be global 
+
 main: # DoCalculation
     jal takeString #take input from user 
-    jal printInputSize # print input	
-    move $11,$8    #   size of input ;
+    jal printInputSize # print input    
+    jal IntialRegister # intialize input registers   
+    
+    la $9,MyArr      #  address of input
+    lb $8, 0($9)      #  ilk adresdeki byte ı al
+    jal  IsDigit  # $8 == a[i];
+    beq $30,$0 ControlIsZero #if control == 0 a[i] is not digit
+
+
+Halt:
+    # Exit
+    li  $v0,10      # exit
+    syscall
+
+ControlIsZero:
+    li  $16,1 #number1IsPozitif = 1
+    add $27,$27,1     #++i;
+    jr  $ra          # Jump to addr stored in $ra
+
+IsDigit: # if digit control == 1 else control == 0
+    move $10,$8  # $10 = a[index]
+    sub  $10,$10,0x30 # a[index] -= '0'
+    bge  $10,$0 IsDigit_J # if (t >= 0)
+    move $30,$0 #return 0;
+
+    jr $ra          # Jump to addr stored in $ra
+IsDigit_J:    
+    sub $10,$0,$10  #t *= -1;
+    add $10,$10,9   #t += 9;
+    bge  $10,$0 IsDigit_J1 #  if (t >= 0)
+    jr $ra          # Jump to addr stored in $ra
+IsDigit_J1:
+    li $30,1  # $30 = 1 ;
+    jr $ra          # Jump to addr stored in $ra
+
+CheckOperator:
+
+add_SR:
+
+substract_SR:
+
+multiply_SR:
+
+    
+
+IntialRegister:
+    move $11,$8    #   $11 = SizeOfinput ;
     li   $12,0    #   int number1Decimal = 0;
     li   $13,0    #   int number1Float = 0;
     li   $14,0    #   int number2Decimal = 0;
@@ -24,42 +65,9 @@ main: # DoCalculation
     li   $24,0    #   int resultFloat = 0;
     li   $25,0    #   int resultDecimalSize = 0;
     li   $26,0    #   int resultFloatSize = 0;
-    li   $27,0    #   index
+    li   $27,0    #   i
     li   $30,0    #   control
-
-    la $9,buffer      #  address of input
-    lb $8, 0($9)      #  ilk adresdeki byte ı al
-    jal  IsDigit  # $8 == a[index];
-    add  $10,$10,1 # temp
-    sub  $10,$10,1 # temp  
-Halt:
-    # Exit
-    li  $v0,10      # exit
-    syscall
-
-IsDigit: # if digit control == 1 else control == 0
-    move $10,$8  # $10 = a[index]
-    sub  $10,$10,0x30 # a[index] -= '0'
-    bge  $10,$0 IsDigit_J # if (t >= 0)
-    move $0,$30 return 0;
     jr $ra          # Jump to addr stored in $ra
-IsDigit_J:    
-    sub $10,$0,$10  #t *= -1;
-    add $10,$10,9   #t += 9;
-    bge  $10,$0 IsDigit_J1 #  if (t >= 0)
-    jr $ra          # Jump to addr stored in $ra
-IsDigit_J1:
-    move $30,1  # $30 = 1 ;
-    jr $ra          # Jump to addr stored in $ra
-
-CheckOperator:
-
-add_SR:
-
-substract_SR:
-
-multiply_SR:
-
 
 #end main
 printInputSize:
@@ -84,6 +92,7 @@ done:
     li $v0, 4
     syscall
 
+    sub $8,$8,1 
     move $a0,$8
     li $v0, 1
     syscall
@@ -121,3 +130,9 @@ takeString:
 
     jr $ra          # Jump to addr stored in $ra
 #end routine
+    .data
+MyArr: .space 80
+    msg1:   .asciiz "Enter As string like NN.NN O NN.NN :   "
+    str2:  .asciiz "You wrote:\n"
+    str3:  .asciiz "input size is  :\n"
+    newline:   .asciiz  "\n"
