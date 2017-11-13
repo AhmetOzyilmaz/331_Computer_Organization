@@ -1,0 +1,8 @@
+module ALUModul(
+	input [5:0] Funct,
+	input [4:0] Shamt,
+	input [31:0] Rs,Rt,
+	output [31:0] Result,
+	output carryOut,Zero,overFlow);
+	
+endmodule;	
