@@ -1,0 +1,11 @@
+module Tmips_registers;
+	reg [31:0] myReg;
+	wire [31:0] result;	
+	
+	ozer_alican_pr2 topModul( myReg, result);
+	initial begin
+		$readmemh("vectors.txt", topModul.regMod.memory);
+		#100;
+		end		
+	
+endmodule

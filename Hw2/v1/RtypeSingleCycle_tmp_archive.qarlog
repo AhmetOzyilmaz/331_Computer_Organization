@@ -1,0 +1,35 @@
+Quartus II Archive log --	D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/RtypeSingleCycle_tmp_archive.qarlog
+
+Archive:	D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/RtypeSingleCycle_tmp_archive.qar
+Date:		Sat Nov 18 15:17:48 2017
+Quartus II 64-Bit		13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+	=========== Files Selected: ===========
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALU_testbench.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/FullAdder.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/HalfAdder.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/RtypeSingleCycle.qpf
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/RtypeSingleCycle.qsf
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Rtype_testbench.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Rtype_testbench2.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Substract_32Bit.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Tmips_registers.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/db/RtypeSingleCycle.db_info
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/incremental_db/compiled_partitions/RtypeSingleCycle.db_info
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/reg.txt
+c:/altera/13.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 18 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sat Nov 18 15:17:51 2017
+Source archive file:	D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/RtypeSingleCycle_tmp_archive.qar
+Archive was extracted into	D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Upload/
+		 - successfully.

@@ -1,0 +1,46 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\2017-2018\Organizasyon\Projects\331_Computer_Organization\Hw2\simulation\modelsim
+vmips_registers
+!i10b 1
+!s100 We<[2XP4d2MXo1Th=L7G^1
+I6V4YOdamdaE2gdh:1R`2V3
+Va[nb0jXmPB`1ac@JiDR:R2
+Z1 dD:\2017-2018\Organizasyon\Projects\331_Computer_Organization\Hw2\simulation\modelsim
+w1511001981
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1511001987.618000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2|-O0|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v|
+!s101 -O0
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2 -O0
+vTmips_registers
+IM5g[m3Qmg2nez:DKQV4=P3
+V_Z2@fF;54gfL8fi3nj6Lc2
+R1
+w1511001846
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Tmips_registers.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Tmips_registers.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@tmips_registers
+!i10b 1
+!s100 S=na]OmC:j[nlV5d<]<J]3
+!s85 0
+!s108 1511001851.348000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Tmips_registers.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2|-O0|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Tmips_registers.v|
+!s101 -O0

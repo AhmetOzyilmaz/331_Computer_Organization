@@ -1,0 +1,169 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do RtypeSingleCycle_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2 {D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Tmips_registers.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Tmips_registers
+# 
+# Top level modules:
+# 	Tmips_registers
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2 {D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_registers
+# 
+# Top level modules:
+# 	mips_registers
+# 
+vsim work.Tmips_registers
+# vsim work.Tmips_registers 
+# Loading work.Tmips_registers
+# Loading work.mips_registers
+run
+# A:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz,B:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz; rs:00000, rt:00001, rd:00000
+# A:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz,B:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz; rs:00001, rt:00000, rd:00000
+# A:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz,B:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz; rs:00001, rt:00001, rd:00000
+vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2 -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_registers
+# ** Error: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v(27): (vlog-2730) Undefined variable: 'clock'.
+# 
+# ** Error: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v(29): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2 -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_registers
+# ** Error: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v(27): (vlog-2730) Undefined variable: 'clock'.
+# 
+# C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2 -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_registers
+# ** Error: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v(29): (vlog-2110) Illegal reference to net "A".
+# 
+# ** Error: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v(30): (vlog-2110) Illegal reference to net "B".
+# 
+# C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2 -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_registers
+# 
+# Top level modules:
+# 	mips_registers
+restart -f
+# Loading work.mips_registers
+# **** Error: RestartQ cmd: namespace inscope ::vsimwidgets::ViewMaster {::.view_master SourceUpdatesAfterRestart} sim
+# ****        invalid command name ""
+# invalid command name ""
+#     while executing
+# "$itk_component(editor) getLanguage"
+#     (method "::vsimwidgets::Srcedit::getLanguage" body line 3)
+#     invoked from within
+# "getLanguage"
+#     (method "::vsimwidgets::Srcedit::SourceUpdateLoadComplete" body line 47)
+#     invoked from within
+# "$srcedit SourceUpdateLoadComplete -restart"
+#     (object "::.view_master" method "::vsimwidgets::ViewMaster::SourceUpdatesAfterRestart" body line 7)
+#     invoked from within
+# "::.view_master SourceUpdatesAfterRestart sim"
+#     (in namespace inscope "::vsimwidgets::ViewMaster" script line 1)
+#     invoked from within
+# "namespace inscope ::vsimwidgets::ViewMaster {::.view_master SourceUpdatesAfterRestart} sim"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $p $tankNamespace "
+run
+# A:00010000000000000000000000000000,B:00011111111111111111111111111111; rs:00000, rt:00001, rd:00000
+# A:00011111111111111111111111111111,B:00010000000000000000000000000000; rs:00001, rt:00000, rd:00000
+# A:00011111111111111111111111111111,B:00011111111111111111111111111111; rs:00001, rt:00001, rd:00000
+vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2 -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Tmips_registers.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Tmips_registers
+# 
+# Top level modules:
+# 	Tmips_registers
+restart -f
+# Loading work.Tmips_registers
+run
+# A:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,B:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx; rs:00000, rt:00001, rd:00000
+# A:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,B:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx; rs:00001, rt:00000, rd:00000
+# A:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,B:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx; rs:00001, rt:00001, rd:00000
+vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2 -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Tmips_registers.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Tmips_registers
+# 
+# Top level modules:
+# 	Tmips_registers
+restart
+# Loading work.Tmips_registers
+run
+# A:00010000000000000000000000000000,B:00011111111111111111111111111111; rs:00000, rt:00001, rd:00000
+# A:00010000000000000000000000000000,B:00011111111111111111111111111111; rs:00001, rt:00000, rd:00000
+# A:00011111111111111111111111111111,B:00011111111111111111111111111111; rs:00001, rt:00001, rd:00000
+vsim -voptargs=+acc work.Tmips_registers
+# vsim -voptargs=+acc work.Tmips_registers 
+# Loading work.Tmips_registers
+# Loading work.mips_registers
+vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2 -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Tmips_registers.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Tmips_registers
+# 
+# Top level modules:
+# 	Tmips_registers
+restart
+# Loading work.Tmips_registers
+run
+# A:00010000000000000000000000000000,B:00011111111111111111111111111111; rs:00000, rt:00001, rd:00000
+# A:00011111111111111111111111111111,B:00010000000000000000000000000000; rs:00001, rt:00000, rd:00000
+# A:00011111111111111111111111111111,B:00011111111111111111111111111111; rs:00001, rt:00001, rd:00000
+vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2 -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Tmips_registers.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Tmips_registers
+# 
+# Top level modules:
+# 	Tmips_registers
+restart
+# Loading work.Tmips_registers
+run
+# A:00010000000000000000000000000000,B:00011111111111111111111111111111; rs:00000, rt:00001, rd:00000
+# A:00011111111111111111111111111111,B:00010000000000000000000000000000; rs:00001, rt:00000, rd:00000
+# A:00011111111111111111111111111111,B:00011111111111111111111111111111; rs:00001, rt:00001, rd:00000
+# D:11000000000000000000000001010101, rd:00000, write_enable:1
+# A:00010000000000000000000000000000, rs:00000
+vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2 -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_registers
+# 
+# Top level modules:
+# 	mips_registers
+run
+restart
+# Loading work.mips_registers
+run
+# A:00010000000000000000000000000000,B:00011111111111111111111111111111; rs:00000, rt:00001, rd:00000
+# A:00011111111111111111111111111111,B:00010000000000000000000000000000; rs:00001, rt:00000, rd:00000
+# A:00011111111111111111111111111111,B:00011111111111111111111111111111; rs:00001, rt:00001, rd:00000
+# D:11000000000000000000000001010101, rd:00000, write_enable:1
+# A:11000000000000000000000001010101, rs:00000
+vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2 -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_registers
+# 
+# Top level modules:
+# 	mips_registers
+restart
+# Loading work.mips_registers
+run
+# A:00010000000000000000000000000000,B:00011111111111111111111111111111; rs:00000, rt:00001, rd:00000
+# A:00011111111111111111111111111111,B:00010000000000000000000000000000; rs:00001, rt:00000, rd:00000
+# A:00011111111111111111111111111111,B:00011111111111111111111111111111; rs:00001, rt:00001, rd:00000
+# D:11000000000000000000000001010101, rd:00000, write_enable:1
+# A:11000000000000000000000001010101, rs:00000
