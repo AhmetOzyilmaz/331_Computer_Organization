@@ -1,0 +1,1421 @@
+|mips_core
+instruction[0] => Funct[0].IN1
+instruction[1] => Funct[1].IN1
+instruction[2] => Funct[2].IN1
+instruction[3] => Funct[3].IN1
+instruction[4] => Funct[4].IN1
+instruction[5] => Funct[5].IN1
+instruction[6] => Shamt[0].IN1
+instruction[7] => Shamt[1].IN1
+instruction[8] => Shamt[2].IN1
+instruction[9] => Shamt[3].IN1
+instruction[10] => Shamt[4].IN1
+instruction[11] => ~NO_FANOUT~
+instruction[12] => ~NO_FANOUT~
+instruction[13] => ~NO_FANOUT~
+instruction[14] => ~NO_FANOUT~
+instruction[15] => ~NO_FANOUT~
+instruction[16] => read_rt[0].IN1
+instruction[17] => read_rt[1].IN1
+instruction[18] => read_rt[2].IN1
+instruction[19] => read_rt[3].IN1
+instruction[20] => read_rt[4].IN1
+instruction[21] => read_rs[0].IN1
+instruction[22] => read_rs[1].IN1
+instruction[23] => read_rs[2].IN1
+instruction[24] => read_rs[3].IN1
+instruction[25] => read_rs[4].IN1
+instruction[26] => ~NO_FANOUT~
+instruction[27] => ~NO_FANOUT~
+instruction[28] => ~NO_FANOUT~
+instruction[29] => ~NO_FANOUT~
+instruction[30] => ~NO_FANOUT~
+instruction[31] => ~NO_FANOUT~
+result[0] <= Alu_Result[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= Alu_Result[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= Alu_Result[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= Alu_Result[3].DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= Alu_Result[4].DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= Alu_Result[5].DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= Alu_Result[6].DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= Alu_Result[7].DB_MAX_OUTPUT_PORT_TYPE
+result[8] <= Alu_Result[8].DB_MAX_OUTPUT_PORT_TYPE
+result[9] <= Alu_Result[9].DB_MAX_OUTPUT_PORT_TYPE
+result[10] <= Alu_Result[10].DB_MAX_OUTPUT_PORT_TYPE
+result[11] <= Alu_Result[11].DB_MAX_OUTPUT_PORT_TYPE
+result[12] <= Alu_Result[12].DB_MAX_OUTPUT_PORT_TYPE
+result[13] <= Alu_Result[13].DB_MAX_OUTPUT_PORT_TYPE
+result[14] <= Alu_Result[14].DB_MAX_OUTPUT_PORT_TYPE
+result[15] <= Alu_Result[15].DB_MAX_OUTPUT_PORT_TYPE
+result[16] <= Alu_Result[16].DB_MAX_OUTPUT_PORT_TYPE
+result[17] <= Alu_Result[17].DB_MAX_OUTPUT_PORT_TYPE
+result[18] <= Alu_Result[18].DB_MAX_OUTPUT_PORT_TYPE
+result[19] <= Alu_Result[19].DB_MAX_OUTPUT_PORT_TYPE
+result[20] <= Alu_Result[20].DB_MAX_OUTPUT_PORT_TYPE
+result[21] <= Alu_Result[21].DB_MAX_OUTPUT_PORT_TYPE
+result[22] <= Alu_Result[22].DB_MAX_OUTPUT_PORT_TYPE
+result[23] <= Alu_Result[23].DB_MAX_OUTPUT_PORT_TYPE
+result[24] <= Alu_Result[24].DB_MAX_OUTPUT_PORT_TYPE
+result[25] <= Alu_Result[25].DB_MAX_OUTPUT_PORT_TYPE
+result[26] <= Alu_Result[26].DB_MAX_OUTPUT_PORT_TYPE
+result[27] <= Alu_Result[27].DB_MAX_OUTPUT_PORT_TYPE
+result[28] <= Alu_Result[28].DB_MAX_OUTPUT_PORT_TYPE
+result[29] <= Alu_Result[29].DB_MAX_OUTPUT_PORT_TYPE
+result[30] <= Alu_Result[30].DB_MAX_OUTPUT_PORT_TYPE
+result[31] <= Alu_Result[31].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29
+Funct[0] => Equal0.IN5
+Funct[0] => Equal1.IN5
+Funct[0] => Equal2.IN1
+Funct[0] => Equal3.IN5
+Funct[0] => Equal4.IN5
+Funct[0] => Equal5.IN5
+Funct[0] => Equal6.IN5
+Funct[0] => Equal7.IN2
+Funct[1] => Equal0.IN4
+Funct[1] => Equal1.IN0
+Funct[1] => Equal2.IN0
+Funct[1] => Equal3.IN4
+Funct[1] => Equal4.IN4
+Funct[1] => Equal5.IN1
+Funct[1] => Equal6.IN4
+Funct[1] => Equal7.IN5
+Funct[2] => Equal0.IN3
+Funct[2] => Equal1.IN4
+Funct[2] => Equal2.IN5
+Funct[2] => Equal3.IN0
+Funct[2] => Equal4.IN3
+Funct[2] => Equal5.IN4
+Funct[2] => Equal6.IN1
+Funct[2] => Equal7.IN1
+Funct[3] => Equal0.IN2
+Funct[3] => Equal1.IN3
+Funct[3] => Equal2.IN4
+Funct[3] => Equal3.IN3
+Funct[3] => Equal4.IN2
+Funct[3] => Equal5.IN3
+Funct[3] => Equal6.IN3
+Funct[3] => Equal7.IN4
+Funct[4] => Equal0.IN1
+Funct[4] => Equal1.IN2
+Funct[4] => Equal2.IN3
+Funct[4] => Equal3.IN2
+Funct[4] => Equal4.IN1
+Funct[4] => Equal5.IN2
+Funct[4] => Equal6.IN2
+Funct[4] => Equal7.IN3
+Funct[5] => Equal0.IN0
+Funct[5] => Equal1.IN1
+Funct[5] => Equal2.IN2
+Funct[5] => Equal3.IN1
+Funct[5] => Equal4.IN0
+Funct[5] => Equal5.IN0
+Funct[5] => Equal6.IN0
+Funct[5] => Equal7.IN0
+Shamt[0] => ShiftRight0.IN5
+Shamt[0] => ShiftLeft0.IN5
+Shamt[0] => ShiftRight1.IN5
+Shamt[1] => ShiftRight0.IN4
+Shamt[1] => ShiftLeft0.IN4
+Shamt[1] => ShiftRight1.IN4
+Shamt[2] => ShiftRight0.IN3
+Shamt[2] => ShiftLeft0.IN3
+Shamt[2] => ShiftRight1.IN3
+Shamt[3] => ShiftRight0.IN2
+Shamt[3] => ShiftLeft0.IN2
+Shamt[3] => ShiftRight1.IN2
+Shamt[4] => ShiftRight0.IN1
+Shamt[4] => ShiftLeft0.IN1
+Shamt[4] => ShiftRight1.IN1
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+A[10] => A[10].IN1
+A[11] => A[11].IN1
+A[12] => A[12].IN1
+A[13] => A[13].IN1
+A[14] => A[14].IN1
+A[15] => A[15].IN1
+A[16] => A[16].IN1
+A[17] => A[17].IN1
+A[18] => A[18].IN1
+A[19] => A[19].IN1
+A[20] => A[20].IN1
+A[21] => A[21].IN1
+A[22] => A[22].IN1
+A[23] => A[23].IN1
+A[24] => A[24].IN1
+A[25] => A[25].IN1
+A[26] => A[26].IN1
+A[27] => A[27].IN1
+A[28] => A[28].IN1
+A[29] => A[29].IN1
+A[30] => A[30].IN1
+A[31] => A[31].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+B[10] => B[10].IN1
+B[11] => B[11].IN1
+B[12] => B[12].IN1
+B[13] => B[13].IN1
+B[14] => B[14].IN1
+B[15] => B[15].IN1
+B[16] => B[16].IN1
+B[17] => B[17].IN1
+B[18] => B[18].IN1
+B[19] => B[19].IN1
+B[20] => B[20].IN1
+B[21] => B[21].IN1
+B[22] => B[22].IN1
+B[23] => B[23].IN1
+B[24] => B[24].IN1
+B[25] => B[25].IN1
+B[26] => B[26].IN1
+B[27] => B[27].IN1
+B[28] => B[28].IN1
+B[29] => B[29].IN1
+B[30] => B[30].IN1
+B[31] => B[31].IN1
+Result[0] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[1] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[2] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[3] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[4] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[5] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[6] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[7] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[8] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[9] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[10] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[11] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[12] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[13] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[14] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[15] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[16] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[17] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[18] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[19] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[20] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[21] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[22] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[23] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[24] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[25] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[26] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[27] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[28] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[29] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[30] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+Result[31] <= Result.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= Adder_32Bit:comb_3.port1
+Zero <= Equal8.DB_MAX_OUTPUT_PORT_TYPE
+overFlow <= overFlow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3
+sum[0] <= FullAdder:a1.port4
+sum[1] <= FullAdder:a2.port4
+sum[2] <= FullAdder:a3.port4
+sum[3] <= FullAdder:a4.port4
+sum[4] <= FullAdder:a5.port4
+sum[5] <= FullAdder:a6.port4
+sum[6] <= FullAdder:a7.port4
+sum[7] <= FullAdder:a8.port4
+sum[8] <= FullAdder:a9.port4
+sum[9] <= FullAdder:a10.port4
+sum[10] <= FullAdder:a11.port4
+sum[11] <= FullAdder:a12.port4
+sum[12] <= FullAdder:a13.port4
+sum[13] <= FullAdder:a14.port4
+sum[14] <= FullAdder:a15.port4
+sum[15] <= FullAdder:a16.port4
+sum[16] <= FullAdder:a17.port4
+sum[17] <= FullAdder:a18.port4
+sum[18] <= FullAdder:a19.port4
+sum[19] <= FullAdder:a20.port4
+sum[20] <= FullAdder:a21.port4
+sum[21] <= FullAdder:a22.port4
+sum[22] <= FullAdder:a23.port4
+sum[23] <= FullAdder:a24.port4
+sum[24] <= FullAdder:a25.port4
+sum[25] <= FullAdder:a26.port4
+sum[26] <= FullAdder:a27.port4
+sum[27] <= FullAdder:a28.port4
+sum[28] <= FullAdder:a29.port4
+sum[29] <= FullAdder:a30.port4
+sum[30] <= FullAdder:a31.port4
+sum[31] <= FullAdder:a32.port4
+cOut <= FullAdder:a32.port3
+in1[0] => in1[0].IN1
+in1[1] => in1[1].IN1
+in1[2] => in1[2].IN1
+in1[3] => in1[3].IN1
+in1[4] => in1[4].IN1
+in1[5] => in1[5].IN1
+in1[6] => in1[6].IN1
+in1[7] => in1[7].IN1
+in1[8] => in1[8].IN1
+in1[9] => in1[9].IN1
+in1[10] => in1[10].IN1
+in1[11] => in1[11].IN1
+in1[12] => in1[12].IN1
+in1[13] => in1[13].IN1
+in1[14] => in1[14].IN1
+in1[15] => in1[15].IN1
+in1[16] => in1[16].IN1
+in1[17] => in1[17].IN1
+in1[18] => in1[18].IN1
+in1[19] => in1[19].IN1
+in1[20] => in1[20].IN1
+in1[21] => in1[21].IN1
+in1[22] => in1[22].IN1
+in1[23] => in1[23].IN1
+in1[24] => in1[24].IN1
+in1[25] => in1[25].IN1
+in1[26] => in1[26].IN1
+in1[27] => in1[27].IN1
+in1[28] => in1[28].IN1
+in1[29] => in1[29].IN1
+in1[30] => in1[30].IN1
+in1[31] => in1[31].IN1
+in2[0] => in2[0].IN1
+in2[1] => in2[1].IN1
+in2[2] => in2[2].IN1
+in2[3] => in2[3].IN1
+in2[4] => in2[4].IN1
+in2[5] => in2[5].IN1
+in2[6] => in2[6].IN1
+in2[7] => in2[7].IN1
+in2[8] => in2[8].IN1
+in2[9] => in2[9].IN1
+in2[10] => in2[10].IN1
+in2[11] => in2[11].IN1
+in2[12] => in2[12].IN1
+in2[13] => in2[13].IN1
+in2[14] => in2[14].IN1
+in2[15] => in2[15].IN1
+in2[16] => in2[16].IN1
+in2[17] => in2[17].IN1
+in2[18] => in2[18].IN1
+in2[19] => in2[19].IN1
+in2[20] => in2[20].IN1
+in2[21] => in2[21].IN1
+in2[22] => in2[22].IN1
+in2[23] => in2[23].IN1
+in2[24] => in2[24].IN1
+in2[25] => in2[25].IN1
+in2[26] => in2[26].IN1
+in2[27] => in2[27].IN1
+in2[28] => in2[28].IN1
+in2[29] => in2[29].IN1
+in2[30] => in2[30].IN1
+in2[31] => in2[31].IN1
+cIn => cIn.IN1
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a1
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a1|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a1|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a2
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a2|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a2|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a3
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a3|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a3|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a4
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a4|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a4|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a5
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a5|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a5|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a6
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a6|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a6|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a7
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a7|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a7|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a8
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a8|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a8|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a9
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a9|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a9|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a10
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a10|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a10|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a11
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a11|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a11|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a12
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a12|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a12|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a13
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a13|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a13|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a14
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a14|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a14|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a15
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a15|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a15|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a16
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a16|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a16|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a17
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a17|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a17|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a18
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a18|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a18|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a19
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a19|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a19|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a20
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a20|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a20|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a21
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a21|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a21|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a22
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a22|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a22|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a23
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a23|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a23|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a24
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a24|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a24|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a25
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a25|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a25|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a26
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a26|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a26|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a27
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a27|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a27|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a28
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a28|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a28|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a29
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a29|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a29|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a30
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a30|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a30|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a31
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a31|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a31|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a32
+in1 => in1.IN1
+in2 => in2.IN1
+cIn => cIn.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= HalfAdder:ha2.port3
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a32|HalfAdder:ha1
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a32|HalfAdder:ha2
+in1 => comb.IN0
+in1 => comb.IN0
+in2 => comb.IN1
+in2 => comb.IN1
+cOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mips_core|mips_registers:comb_30
+read_data_1[0] <= read_data_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[1] <= read_data_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[2] <= read_data_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[3] <= read_data_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[4] <= read_data_1[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[5] <= read_data_1[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[6] <= read_data_1[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[7] <= read_data_1[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[8] <= read_data_1[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[9] <= read_data_1[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[10] <= read_data_1[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[11] <= read_data_1[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[12] <= read_data_1[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[13] <= read_data_1[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[14] <= read_data_1[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[15] <= read_data_1[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[16] <= read_data_1[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[17] <= read_data_1[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[18] <= read_data_1[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[19] <= read_data_1[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[20] <= read_data_1[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[21] <= read_data_1[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[22] <= read_data_1[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[23] <= read_data_1[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[24] <= read_data_1[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[25] <= read_data_1[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[26] <= read_data_1[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[27] <= read_data_1[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[28] <= read_data_1[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[29] <= read_data_1[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[30] <= read_data_1[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_1[31] <= read_data_1[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[0] <= read_data_2[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[1] <= read_data_2[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[2] <= read_data_2[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[3] <= read_data_2[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[4] <= read_data_2[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[5] <= read_data_2[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[6] <= read_data_2[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[7] <= read_data_2[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[8] <= read_data_2[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[9] <= read_data_2[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[10] <= read_data_2[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[11] <= read_data_2[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[12] <= read_data_2[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[13] <= read_data_2[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[14] <= read_data_2[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[15] <= read_data_2[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[16] <= read_data_2[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[17] <= read_data_2[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[18] <= read_data_2[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[19] <= read_data_2[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[20] <= read_data_2[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[21] <= read_data_2[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[22] <= read_data_2[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[23] <= read_data_2[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[24] <= read_data_2[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[25] <= read_data_2[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[26] <= read_data_2[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[27] <= read_data_2[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[28] <= read_data_2[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[29] <= read_data_2[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[30] <= read_data_2[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+read_data_2[31] <= read_data_2[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+write_data[0] => registers.data_a[0].DATAIN
+write_data[0] => registers.DATAIN
+write_data[1] => registers.data_a[1].DATAIN
+write_data[1] => registers.DATAIN1
+write_data[2] => registers.data_a[2].DATAIN
+write_data[2] => registers.DATAIN2
+write_data[3] => registers.data_a[3].DATAIN
+write_data[3] => registers.DATAIN3
+write_data[4] => registers.data_a[4].DATAIN
+write_data[4] => registers.DATAIN4
+write_data[5] => registers.data_a[5].DATAIN
+write_data[5] => registers.DATAIN5
+write_data[6] => registers.data_a[6].DATAIN
+write_data[6] => registers.DATAIN6
+write_data[7] => registers.data_a[7].DATAIN
+write_data[7] => registers.DATAIN7
+write_data[8] => registers.data_a[8].DATAIN
+write_data[8] => registers.DATAIN8
+write_data[9] => registers.data_a[9].DATAIN
+write_data[9] => registers.DATAIN9
+write_data[10] => registers.data_a[10].DATAIN
+write_data[10] => registers.DATAIN10
+write_data[11] => registers.data_a[11].DATAIN
+write_data[11] => registers.DATAIN11
+write_data[12] => registers.data_a[12].DATAIN
+write_data[12] => registers.DATAIN12
+write_data[13] => registers.data_a[13].DATAIN
+write_data[13] => registers.DATAIN13
+write_data[14] => registers.data_a[14].DATAIN
+write_data[14] => registers.DATAIN14
+write_data[15] => registers.data_a[15].DATAIN
+write_data[15] => registers.DATAIN15
+write_data[16] => registers.data_a[16].DATAIN
+write_data[16] => registers.DATAIN16
+write_data[17] => registers.data_a[17].DATAIN
+write_data[17] => registers.DATAIN17
+write_data[18] => registers.data_a[18].DATAIN
+write_data[18] => registers.DATAIN18
+write_data[19] => registers.data_a[19].DATAIN
+write_data[19] => registers.DATAIN19
+write_data[20] => registers.data_a[20].DATAIN
+write_data[20] => registers.DATAIN20
+write_data[21] => registers.data_a[21].DATAIN
+write_data[21] => registers.DATAIN21
+write_data[22] => registers.data_a[22].DATAIN
+write_data[22] => registers.DATAIN22
+write_data[23] => registers.data_a[23].DATAIN
+write_data[23] => registers.DATAIN23
+write_data[24] => registers.data_a[24].DATAIN
+write_data[24] => registers.DATAIN24
+write_data[25] => registers.data_a[25].DATAIN
+write_data[25] => registers.DATAIN25
+write_data[26] => registers.data_a[26].DATAIN
+write_data[26] => registers.DATAIN26
+write_data[27] => registers.data_a[27].DATAIN
+write_data[27] => registers.DATAIN27
+write_data[28] => registers.data_a[28].DATAIN
+write_data[28] => registers.DATAIN28
+write_data[29] => registers.data_a[29].DATAIN
+write_data[29] => registers.DATAIN29
+write_data[30] => registers.data_a[30].DATAIN
+write_data[30] => registers.DATAIN30
+write_data[31] => registers.data_a[31].DATAIN
+write_data[31] => registers.DATAIN31
+read_reg_1[0] => registers.RADDR
+read_reg_1[1] => registers.RADDR1
+read_reg_1[2] => registers.RADDR2
+read_reg_1[3] => registers.RADDR3
+read_reg_1[4] => registers.RADDR4
+read_reg_2[0] => registers.PORTBRADDR
+read_reg_2[1] => registers.PORTBRADDR1
+read_reg_2[2] => registers.PORTBRADDR2
+read_reg_2[3] => registers.PORTBRADDR3
+read_reg_2[4] => registers.PORTBRADDR4
+write_reg[0] => registers.waddr_a[0].DATAIN
+write_reg[0] => registers.WADDR
+write_reg[1] => registers.waddr_a[1].DATAIN
+write_reg[1] => registers.WADDR1
+write_reg[2] => registers.waddr_a[2].DATAIN
+write_reg[2] => registers.WADDR2
+write_reg[3] => registers.waddr_a[3].DATAIN
+write_reg[3] => registers.WADDR3
+write_reg[4] => registers.waddr_a[4].DATAIN
+write_reg[4] => registers.WADDR4
+signal_reg_write => registers.we_a.DATAIN
+signal_reg_write => registers.WE
+clk => read_data_2[0]~reg0.CLK
+clk => read_data_2[1]~reg0.CLK
+clk => read_data_2[2]~reg0.CLK
+clk => read_data_2[3]~reg0.CLK
+clk => read_data_2[4]~reg0.CLK
+clk => read_data_2[5]~reg0.CLK
+clk => read_data_2[6]~reg0.CLK
+clk => read_data_2[7]~reg0.CLK
+clk => read_data_2[8]~reg0.CLK
+clk => read_data_2[9]~reg0.CLK
+clk => read_data_2[10]~reg0.CLK
+clk => read_data_2[11]~reg0.CLK
+clk => read_data_2[12]~reg0.CLK
+clk => read_data_2[13]~reg0.CLK
+clk => read_data_2[14]~reg0.CLK
+clk => read_data_2[15]~reg0.CLK
+clk => read_data_2[16]~reg0.CLK
+clk => read_data_2[17]~reg0.CLK
+clk => read_data_2[18]~reg0.CLK
+clk => read_data_2[19]~reg0.CLK
+clk => read_data_2[20]~reg0.CLK
+clk => read_data_2[21]~reg0.CLK
+clk => read_data_2[22]~reg0.CLK
+clk => read_data_2[23]~reg0.CLK
+clk => read_data_2[24]~reg0.CLK
+clk => read_data_2[25]~reg0.CLK
+clk => read_data_2[26]~reg0.CLK
+clk => read_data_2[27]~reg0.CLK
+clk => read_data_2[28]~reg0.CLK
+clk => read_data_2[29]~reg0.CLK
+clk => read_data_2[30]~reg0.CLK
+clk => read_data_2[31]~reg0.CLK
+clk => read_data_1[0]~reg0.CLK
+clk => read_data_1[1]~reg0.CLK
+clk => read_data_1[2]~reg0.CLK
+clk => read_data_1[3]~reg0.CLK
+clk => read_data_1[4]~reg0.CLK
+clk => read_data_1[5]~reg0.CLK
+clk => read_data_1[6]~reg0.CLK
+clk => read_data_1[7]~reg0.CLK
+clk => read_data_1[8]~reg0.CLK
+clk => read_data_1[9]~reg0.CLK
+clk => read_data_1[10]~reg0.CLK
+clk => read_data_1[11]~reg0.CLK
+clk => read_data_1[12]~reg0.CLK
+clk => read_data_1[13]~reg0.CLK
+clk => read_data_1[14]~reg0.CLK
+clk => read_data_1[15]~reg0.CLK
+clk => read_data_1[16]~reg0.CLK
+clk => read_data_1[17]~reg0.CLK
+clk => read_data_1[18]~reg0.CLK
+clk => read_data_1[19]~reg0.CLK
+clk => read_data_1[20]~reg0.CLK
+clk => read_data_1[21]~reg0.CLK
+clk => read_data_1[22]~reg0.CLK
+clk => read_data_1[23]~reg0.CLK
+clk => read_data_1[24]~reg0.CLK
+clk => read_data_1[25]~reg0.CLK
+clk => read_data_1[26]~reg0.CLK
+clk => read_data_1[27]~reg0.CLK
+clk => read_data_1[28]~reg0.CLK
+clk => read_data_1[29]~reg0.CLK
+clk => read_data_1[30]~reg0.CLK
+clk => read_data_1[31]~reg0.CLK
+clk => registers.we_a.CLK
+clk => registers.waddr_a[4].CLK
+clk => registers.waddr_a[3].CLK
+clk => registers.waddr_a[2].CLK
+clk => registers.waddr_a[1].CLK
+clk => registers.waddr_a[0].CLK
+clk => registers.data_a[31].CLK
+clk => registers.data_a[30].CLK
+clk => registers.data_a[29].CLK
+clk => registers.data_a[28].CLK
+clk => registers.data_a[27].CLK
+clk => registers.data_a[26].CLK
+clk => registers.data_a[25].CLK
+clk => registers.data_a[24].CLK
+clk => registers.data_a[23].CLK
+clk => registers.data_a[22].CLK
+clk => registers.data_a[21].CLK
+clk => registers.data_a[20].CLK
+clk => registers.data_a[19].CLK
+clk => registers.data_a[18].CLK
+clk => registers.data_a[17].CLK
+clk => registers.data_a[16].CLK
+clk => registers.data_a[15].CLK
+clk => registers.data_a[14].CLK
+clk => registers.data_a[13].CLK
+clk => registers.data_a[12].CLK
+clk => registers.data_a[11].CLK
+clk => registers.data_a[10].CLK
+clk => registers.data_a[9].CLK
+clk => registers.data_a[8].CLK
+clk => registers.data_a[7].CLK
+clk => registers.data_a[6].CLK
+clk => registers.data_a[5].CLK
+clk => registers.data_a[4].CLK
+clk => registers.data_a[3].CLK
+clk => registers.data_a[2].CLK
+clk => registers.data_a[1].CLK
+clk => registers.data_a[0].CLK
+clk => registers.CLK0
+
+
