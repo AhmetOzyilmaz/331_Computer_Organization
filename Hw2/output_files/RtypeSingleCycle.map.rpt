@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RtypeSingleCycle
-Sun Nov 19 09:47:29 2017
+Sun Nov 19 12:53:08 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -15,12 +15,11 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
   9. General Register Statistics
- 10. Port Connectivity Checks: "mips_registers:comb_30"
- 11. Port Connectivity Checks: "ALUModul:comb_29|Adder_32Bit:comb_3"
- 12. Port Connectivity Checks: "ALUModul:comb_29"
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
- 15. Analysis & Synthesis Suppressed Messages
+ 10. Port Connectivity Checks: "ALUModul:alu|Adder_32Bit:add_32"
+ 11. Port Connectivity Checks: "ALUModul:alu"
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+ 14. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -46,7 +45,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 19 09:47:28 2017      ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 19 12:53:08 2017      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; RtypeSingleCycle                           ;
 ; Top-level Entity Name              ; mips_core                                  ;
@@ -215,15 +214,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                               ;
-+-------------------------------------------+--------------------------------------+
-; Register name                             ; Reason for Removal                   ;
-+-------------------------------------------+--------------------------------------+
-; mips_registers:comb_30|read_data_2[0..31] ; Stuck at GND due to stuck port clock ;
-; mips_registers:comb_30|read_data_1[0..31] ; Stuck at GND due to stuck port clock ;
-; Total Number of Removed Registers = 64    ;                                      ;
-+-------------------------------------------+--------------------------------------+
++-------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                            ;
++----------------------------------------+--------------------------------------+
+; Register name                          ; Reason for Removal                   ;
++----------------------------------------+--------------------------------------+
+; mips_registers:Mreg|read_data_2[0..31] ; Stuck at GND due to stuck port clock ;
+; mips_registers:Mreg|read_data_1[0..31] ; Stuck at GND due to stuck port clock ;
+; Total Number of Removed Registers = 64 ;                                      ;
++----------------------------------------+--------------------------------------+
 
 
 +------------------------------------------------------+
@@ -241,17 +240,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------+
-; Port Connectivity Checks: "mips_registers:comb_30" ;
-+------+-------+----------+--------------------------+
-; Port ; Type  ; Severity ; Details                  ;
-+------+-------+----------+--------------------------+
-; clk  ; Input ; Info     ; Stuck at GND             ;
-+------+-------+----------+--------------------------+
-
-
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUModul:comb_29|Adder_32Bit:comb_3"                                                                                                                                                 ;
+; Port Connectivity Checks: "ALUModul:alu|Adder_32Bit:add_32"                                                                                                                                                     ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -261,7 +251,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUModul:comb_29"                                                                       ;
+; Port Connectivity Checks: "ALUModul:alu"                                                                           ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port     ; Type   ; Severity ; Details                                                                             ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -286,7 +276,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Nov 19 09:47:26 2017
+    Info: Processing started: Sun Nov 19 12:53:06 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 111044014 -c RtypeSingleCycle
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file mips_core.v
@@ -295,8 +285,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file mips_re
     Info (12023): Found entity 1: mips_registers
 Info (12021): Found 1 design units, including 1 entities, in source file mips_testbench.v
     Info (12023): Found entity 1: mips_testbench
-Info (12021): Found 1 design units, including 1 entities, in source file rtype_testbench.v
-    Info (12023): Found entity 1: Rtype_testbench
 Info (12021): Found 1 design units, including 1 entities, in source file alu_testbench.v
     Info (12023): Found entity 1: ALU_testbench
 Info (12021): Found 1 design units, including 1 entities, in source file alumodul.v
@@ -309,22 +297,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file adder_3
     Info (12023): Found entity 1: Adder_32Bit
 Info (12021): Found 1 design units, including 1 entities, in source file tmips_registers.v
     Info (12023): Found entity 1: Tmips_registers
-Warning (10236): Verilog HDL Implicit Net warning at mips_core.v(20): created implicit net for "overFlow"
-Warning (10236): Verilog HDL Implicit Net warning at mips_core.v(22): created implicit net for "carryOut"
-Warning (10236): Verilog HDL Implicit Net warning at mips_core.v(26): created implicit net for "read_rd"
-Critical Warning (10846): Verilog HDL Instantiation warning at ALUModul.v(13): instance has no name
-Critical Warning (10846): Verilog HDL Instantiation warning at mips_core.v(31): instance has no name
-Critical Warning (10846): Verilog HDL Instantiation warning at mips_core.v(33): instance has no name
+Warning (10236): Verilog HDL Implicit Net warning at mips_core.v(26): created implicit net for "carryOut"
+Warning (10236): Verilog HDL Implicit Net warning at mips_core.v(26): created implicit net for "overFlow"
 Info (12127): Elaborating entity "mips_core" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at mips_core.v(26): object "read_rd" assigned a value but never read
-Warning (10230): Verilog HDL assignment warning at mips_core.v(26): truncated value with size 5 to match size of target (1)
-Info (12128): Elaborating entity "ALUModul" for hierarchy "ALUModul:comb_29"
+Info (12128): Elaborating entity "ALUModul" for hierarchy "ALUModul:alu"
 Warning (10230): Verilog HDL assignment warning at ALUModul.v(16): truncated value with size 32 to match size of target (1)
 Warning (10230): Verilog HDL assignment warning at ALUModul.v(17): truncated value with size 32 to match size of target (1)
-Info (12128): Elaborating entity "Adder_32Bit" for hierarchy "ALUModul:comb_29|Adder_32Bit:comb_3"
-Info (12128): Elaborating entity "FullAdder" for hierarchy "ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a1"
-Info (12128): Elaborating entity "HalfAdder" for hierarchy "ALUModul:comb_29|Adder_32Bit:comb_3|FullAdder:a1|HalfAdder:ha1"
-Info (12128): Elaborating entity "mips_registers" for hierarchy "mips_registers:comb_30"
+Info (12128): Elaborating entity "Adder_32Bit" for hierarchy "ALUModul:alu|Adder_32Bit:add_32"
+Info (12128): Elaborating entity "FullAdder" for hierarchy "ALUModul:alu|Adder_32Bit:add_32|FullAdder:a1"
+Info (12128): Elaborating entity "HalfAdder" for hierarchy "ALUModul:alu|Adder_32Bit:add_32|FullAdder:a1|HalfAdder:ha1"
+Info (12128): Elaborating entity "mips_registers" for hierarchy "mips_registers:Mreg"
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "result[0]" is stuck at GND
@@ -398,10 +380,10 @@ Warning (21074): Design contains 32 input pin(s) that do not drive logic
 Info (21057): Implemented 64 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 32 input pins
     Info (21059): Implemented 32 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 78 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 72 warnings
     Info: Peak virtual memory: 508 megabytes
-    Info: Processing ended: Sun Nov 19 09:47:29 2017
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Sun Nov 19 12:53:08 2017
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

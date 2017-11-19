@@ -5,7 +5,6 @@ module Adder_32Bit(
 	input [31:0]in2, 
 	input cIn
 	);
-	
 	wire [31:0]tmpCarry; //inside carry
 	
 	FullAdder a1( in1[0], in2[0], cIn, tmpCarry[0],sum[0]);
