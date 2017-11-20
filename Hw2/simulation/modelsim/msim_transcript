@@ -95,18 +95,6 @@ vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Compu
 # 
 # Top level modules:
 # 	mips_testbench
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Rtype_testbench.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Rtype_testbench
-# 
-# Top level modules:
-# 	Rtype_testbench
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Rtype_testbench2.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Rtype_testbench2
-# 
-# Top level modules:
-# 	Rtype_testbench2
 vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Tmips_registers.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Tmips_registers
@@ -117,73 +105,80 @@ vsim -voptargs=+acc work.mips_testbench
 # vsim -voptargs=+acc work.mips_testbench 
 # Loading work.mips_testbench
 # Loading work.mips_core
+# Loading work.mips_registers
 # Loading work.ALUModul
-# ** Error: (vsim-3037) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v(13): Missing instance name in instantiation of 'Adder_32Bit'.
+# Loading work.Adder_32Bit
+# Loading work.FullAdder
+# Loading work.HalfAdder
+# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v(21): [PCDPC] - Port size (6 or 6) does not match connection size (1) for port 'Funct'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v(2).
 # 
 #         Region: /mips_testbench/topModul/alu
-# Loading work.mips_registers
-# Error loading design
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Adder_32Bit
+# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v(21): [PCDPC] - Port size (5 or 5) does not match connection size (1) for port 'Shamt'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v(3).
 # 
-# Top level modules:
-# 	Adder_32Bit
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALU_testbench.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ALU_testbench
+#         Region: /mips_testbench/topModul/alu
+# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'cIn'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v(6).
 # 
-# Top level modules:
-# 	ALU_testbench
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ALUModul
-# 
-# Top level modules:
-# 	ALUModul
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/FullAdder.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module FullAdder
-# 
-# Top level modules:
-# 	FullAdder
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/HalfAdder.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module HalfAdder
-# 
-# Top level modules:
-# 	HalfAdder
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+#         Region: /mips_testbench/topModul/alu/add_32
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mips_core
 # 
 # Top level modules:
 # 	mips_core
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
+vsim -voptargs=+acc work.mips_core
+# vsim -voptargs=+acc work.mips_core 
+# Loading work.mips_core
+# Loading work.mips_registers
+# Loading work.ALUModul
+# Loading work.Adder_32Bit
+# Loading work.FullAdder
+# Loading work.HalfAdder
+# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'cIn'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v(6).
+# 
+#         Region: /mips_core/alu/add_32
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALUModul
+# 
+# Top level modules:
+# 	ALUModul
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALU_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_testbench
+# 
+# Top level modules:
+# 	ALU_testbench
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALUModul
+# 
+# Top level modules:
+# 	ALUModul
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mips_registers
 # 
 # Top level modules:
 # 	mips_registers
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mips_testbench
 # 
 # Top level modules:
 # 	mips_testbench
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Rtype_testbench.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Rtype_testbench
-# 
-# Top level modules:
-# 	Rtype_testbench
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Rtype_testbench2.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Rtype_testbench2
-# 
-# Top level modules:
-# 	Rtype_testbench2
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Tmips_registers.v
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Tmips_registers.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Tmips_registers
 # 
@@ -193,391 +188,25 @@ vsim -voptargs=+acc work.mips_testbench
 # vsim -voptargs=+acc work.mips_testbench 
 # Loading work.mips_testbench
 # Loading work.mips_core
-# Loading work.ALUModul
-# Loading work.Adder_32Bit
-# Loading work.FullAdder
-# Loading work.HalfAdder
 # Loading work.mips_registers
-# ** Warning: (vsim-3008) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(9): [CNNODP] - Component name (regMod) is not on a downward path.
-# 
-#         Region: /mips_testbench
-# ** Error: (vsim-3043) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(9): Unresolved reference to 'regMod' in topModul.regMod.
-# 
-#         Region: /mips_testbench
-# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(6): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'result'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v(1).
-# 
-#         Region: /mips_testbench/topModul
-# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'cIn'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v(6).
-# 
-#         Region: /mips_testbench/topModul/alu/add_32
-# Error loading design
-# A time value could not be extracted from the current line
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Adder_32Bit
-# 
-# Top level modules:
-# 	Adder_32Bit
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALU_testbench.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ALU_testbench
-# 
-# Top level modules:
-# 	ALU_testbench
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ALUModul
-# 
-# Top level modules:
-# 	ALUModul
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/FullAdder.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module FullAdder
-# 
-# Top level modules:
-# 	FullAdder
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/HalfAdder.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module HalfAdder
-# 
-# Top level modules:
-# 	HalfAdder
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Loading work.ALUModul
+add wave -position insertpoint sim:/mips_testbench/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mips_core
 # 
 # Top level modules:
 # 	mips_core
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mips_registers
-# 
-# Top level modules:
-# 	mips_registers
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mips_testbench
-# 
-# Top level modules:
-# 	mips_testbench
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Rtype_testbench.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Rtype_testbench
-# 
-# Top level modules:
-# 	Rtype_testbench
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Rtype_testbench2.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Rtype_testbench2
-# 
-# Top level modules:
-# 	Rtype_testbench2
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Tmips_registers.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Tmips_registers
-# 
-# Top level modules:
-# 	Tmips_registers
-vsim -voptargs=+acc work.mips_testbench
-# vsim -voptargs=+acc work.mips_testbench 
-# Loading work.mips_testbench
-# Loading work.mips_core
-# Loading work.ALUModul
-# Loading work.Adder_32Bit
-# Loading work.FullAdder
-# Loading work.HalfAdder
-# Loading work.mips_registers
-# ** Warning: (vsim-3008) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(9): [CNNODP] - Component name (mips_registers) is not on a downward path.
-# 
-#         Region: /mips_testbench
-# ** Error: (vsim-3043) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(9): Unresolved reference to 'mips_registers' in topModul.mips_registers.
-# 
-#         Region: /mips_testbench
-# ** Warning: (vsim-3008) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(48): [CNNODP] - Component name (regMod) is not on a downward path.
-# 
-#         Region: /mips_testbench
-# ** Error: (vsim-3043) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(48): Unresolved reference to 'regMod' in topModul.regMod.
-# 
-#         Region: /mips_testbench
-# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(6): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'result'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v(1).
-# 
-#         Region: /mips_testbench/topModul
-# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'cIn'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v(6).
-# 
-#         Region: /mips_testbench/topModul/alu/add_32
-# Error loading design
-# A time value could not be extracted from the current line
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Adder_32Bit
-# 
-# Top level modules:
-# 	Adder_32Bit
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALU_testbench.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ALU_testbench
-# 
-# Top level modules:
-# 	ALU_testbench
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ALUModul
-# 
-# Top level modules:
-# 	ALUModul
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/FullAdder.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module FullAdder
-# 
-# Top level modules:
-# 	FullAdder
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/HalfAdder.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module HalfAdder
-# 
-# Top level modules:
-# 	HalfAdder
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mips_core
-# 
-# Top level modules:
-# 	mips_core
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mips_registers
-# 
-# Top level modules:
-# 	mips_registers
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mips_testbench
-# 
-# Top level modules:
-# 	mips_testbench
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Rtype_testbench.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Rtype_testbench
-# 
-# Top level modules:
-# 	Rtype_testbench
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Rtype_testbench2.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Rtype_testbench2
-# 
-# Top level modules:
-# 	Rtype_testbench2
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Tmips_registers.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Tmips_registers
-# 
-# Top level modules:
-# 	Tmips_registers
-vsim -voptargs=+acc work.mips_testbench
-# vsim -voptargs=+acc work.mips_testbench 
-# Loading work.mips_testbench
-# Loading work.mips_core
-# Loading work.ALUModul
-# Loading work.Adder_32Bit
-# Loading work.FullAdder
-# Loading work.HalfAdder
-# Loading work.mips_registers
-# ** Warning: (vsim-3008) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(9): [CNNODP] - Component name (mips_registers) is not on a downward path.
-# 
-#         Region: /mips_testbench
-# ** Error: (vsim-3043) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(9): Unresolved reference to 'mips_registers' in topModul.mips_registers.
-# 
-#         Region: /mips_testbench
-# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(6): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'result'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v(1).
-# 
-#         Region: /mips_testbench/topModul
-# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'cIn'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v(6).
-# 
-#         Region: /mips_testbench/topModul/alu/add_32
-# Error loading design
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Adder_32Bit
-# 
-# Top level modules:
-# 	Adder_32Bit
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALU_testbench.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ALU_testbench
-# 
-# Top level modules:
-# 	ALU_testbench
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ALUModul
-# 
-# Top level modules:
-# 	ALUModul
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/FullAdder.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module FullAdder
-# 
-# Top level modules:
-# 	FullAdder
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/HalfAdder.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module HalfAdder
-# 
-# Top level modules:
-# 	HalfAdder
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mips_core
-# 
-# Top level modules:
-# 	mips_core
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mips_registers
-# 
-# Top level modules:
-# 	mips_registers
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mips_testbench
-# 
-# Top level modules:
-# 	mips_testbench
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Rtype_testbench.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Rtype_testbench
-# 
-# Top level modules:
-# 	Rtype_testbench
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Rtype_testbench2.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Rtype_testbench2
-# 
-# Top level modules:
-# 	Rtype_testbench2
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Tmips_registers.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Tmips_registers
-# 
-# Top level modules:
-# 	Tmips_registers
-vsim -voptargs=+acc work.mips_testbench
-# vsim -voptargs=+acc work.mips_testbench 
-# Loading work.mips_testbench
-# Loading work.mips_core
-# Loading work.ALUModul
-# Loading work.Adder_32Bit
-# Loading work.FullAdder
-# Loading work.HalfAdder
-# Loading work.mips_registers
-# ** Warning: (vsim-3008) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(9): [CNNODP] - Component name (mips_registers) is not on a downward path.
-# 
-#         Region: /mips_testbench
-# ** Error: (vsim-3043) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(9): Unresolved reference to 'mips_registers' in topModul.mips_registers.
-# 
-#         Region: /mips_testbench
-# ** Warning: (vsim-3008) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(48): [CNNODP] - Component name (regMod) is not on a downward path.
-# 
-#         Region: /mips_testbench
-# ** Error: (vsim-3043) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(48): Unresolved reference to 'regMod' in topModul.regMod.
-# 
-#         Region: /mips_testbench
-# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'cIn'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v(6).
-# 
-#         Region: /mips_testbench/topModul/alu/add_32
-# Error loading design
-# A time value could not be extracted from the current line
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Adder_32Bit
-# 
-# Top level modules:
-# 	Adder_32Bit
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALU_testbench.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ALU_testbench
-# 
-# Top level modules:
-# 	ALU_testbench
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ALUModul
-# 
-# Top level modules:
-# 	ALUModul
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/FullAdder.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module FullAdder
-# 
-# Top level modules:
-# 	FullAdder
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/HalfAdder.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module HalfAdder
-# 
-# Top level modules:
-# 	HalfAdder
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mips_core
-# 
-# Top level modules:
-# 	mips_core
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mips_registers
-# 
-# Top level modules:
-# 	mips_registers
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mips_testbench
-# 
-# Top level modules:
-# 	mips_testbench
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Rtype_testbench.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Rtype_testbench
-# 
-# Top level modules:
-# 	Rtype_testbench
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Rtype_testbench2.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Rtype_testbench2
-# 
-# Top level modules:
-# 	Rtype_testbench2
-vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Tmips_registers.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Tmips_registers
-# 
-# Top level modules:
-# 	Tmips_registers
-vsim -voptargs=+acc work.mips_testbench
-# vsim -voptargs=+acc work.mips_testbench 
-# Loading work.mips_testbench
-# Loading work.mips_core
-# Loading work.ALUModul
-# Loading work.Adder_32Bit
-# Loading work.FullAdder
-# Loading work.HalfAdder
-# Loading work.mips_registers
-# ** Warning: (vsim-3008) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(48): [CNNODP] - Component name (memory) is not on a downward path.
-# 
-#         Region: /mips_testbench
-# ** Error: (vsim-3043) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(48): Unresolved reference to 'memory' in topModul.Mreg.memory.
-# 
-#         Region: /mips_testbench
-# ** Warning: (vsim-3008) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(9): [CNNODP] - Component name (mips_registers) is not on a downward path.
-# 
-#         Region: /mips_testbench
-# ** Error: (vsim-3043) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(9): Unresolved reference to 'mips_registers' in topModul.mips_registers.
-# 
-#         Region: /mips_testbench
-# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'cIn'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v(6).
-# 
-#         Region: /mips_testbench/topModul/alu/add_32
-# Error loading design
 vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mips_testbench
@@ -588,33 +217,286 @@ vsim -voptargs=+acc work.mips_testbench
 # vsim -voptargs=+acc work.mips_testbench 
 # Loading work.mips_testbench
 # Loading work.mips_core
-# Loading work.ALUModul
-# Loading work.Adder_32Bit
-# Loading work.FullAdder
-# Loading work.HalfAdder
 # Loading work.mips_registers
-# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'cIn'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v(6).
+# Loading work.ALUModul
+add wave -position insertpoint sim:/mips_testbench/*
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
 # 
-#         Region: /mips_testbench/topModul/alu/add_32
+# Top level modules:
+# 	mips_core
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_testbench
+# 
+# Top level modules:
+# 	mips_testbench
+vsim -voptargs=+acc work.mips_testbench
+# vsim -voptargs=+acc work.mips_testbench 
+# Loading work.mips_testbench
+# Loading work.mips_core
+# Loading work.mips_registers
+# Loading work.ALUModul
+add wave -position insertpoint sim:/mips_testbench/*
+run
+# instruction:00000000000000111101000011100000
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# instruction:00000000001000111011100011000010
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# instruction:00000000101001111110000011100000
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# instruction:00000000110001111110100011000010
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# instruction:00000000011001111111000011100101
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_testbench
+# 
+# Top level modules:
+# 	mips_testbench
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
+vsim -voptargs=+acc work.mips_testbench
+# vsim -voptargs=+acc work.mips_testbench 
+# Loading work.mips_testbench
+# Loading work.mips_core
+# Loading work.mips_registers
+# Loading work.ALUModul
+add wave -position insertpoint sim:/mips_testbench/topModul/*
+run
+# instruction:00000000000000111101000011100000
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000000001000111011100011000010
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000000101001111110000011100000
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000000110001111110100011000010
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000000011001111111000011100101
+run
+# opcode:000000,rs:00011,rt:00111,rd:11110,shamt:00011,funct:100101
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000001100000000111100011100100
+# opcode:000000,rs:01100,rt:00000,rd:01111,shamt:00011,funct:100100
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000000101001001111100011101010
+# opcode:000000,rs:00101,rt:00100,rd:11111,shamt:00011,funct:101010
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000000111010001111100011000011
+# opcode:000000,rs:00111,rt:01000,rd:11111,shamt:00011,funct:000011
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000001000010011111100011000010
+# opcode:000000,rs:01000,rt:01001,rd:11111,shamt:00011,funct:000010
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000001001100101111100011000000
+run
+# opcode:000000,rs:01001,rt:10010,rd:11111,shamt:00011,funct:000000
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000001011000110111100011000100
+# opcode:000000,rs:01011,rt:00011,rd:01111,shamt:00011,funct:000100
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000001011110110111100011101010
+# opcode:000000,rs:01011,rt:11011,rd:01111,shamt:00011,funct:101010
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+run
+run
+run
+run
+run
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_testbench
+# 
+# Top level modules:
+# 	mips_testbench
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
+vsim -voptargs=+acc work.mips_testbench
+# vsim -voptargs=+acc work.mips_testbench 
+# Loading work.mips_testbench
+# Loading work.mips_core
+# Loading work.mips_registers
+# Loading work.ALUModul
+add wave -position insertpoint sim:/mips_testbench/topModul/*
+run
+# instruction:00000000000000111101000011100000
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000000001000111011100011000010
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000000101001111110000011100000
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000000110001111110100011000010
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000000011001111111000011100101
+run
+# opcode:000000,rs:00011,rt:00111,rd:11110,shamt:00011,funct:100101
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000001100000000111100011100100
+# opcode:000000,rs:01100,rt:00000,rd:01111,shamt:00011,funct:100100
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000000101001001111100011101010
+# opcode:000000,rs:00101,rt:00100,rd:11111,shamt:00011,funct:101010
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000000111010001111100011000011
+# opcode:000000,rs:00111,rt:01000,rd:11111,shamt:00011,funct:000011
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000001000010011111100011000010
+# opcode:000000,rs:01000,rt:01001,rd:11111,shamt:00011,funct:000010
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000001001100101111100011000000
+run
+# opcode:000000,rs:01001,rt:10010,rd:11111,shamt:00011,funct:000000
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000001011000110111100011000100
+# opcode:000000,rs:01011,rt:00011,rd:01111,shamt:00011,funct:000100
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+# instruction:00000001011110110111100011101010
+# opcode:000000,rs:01011,rt:11011,rd:01111,shamt:00011,funct:101010
+# result:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_testbench
+# 
+# Top level modules:
+# 	mips_testbench
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
+vsim -voptargs=+acc work.mips_testbench
+# vsim -voptargs=+acc work.mips_testbench 
+# Loading work.mips_testbench
+# Loading work.mips_core
+# Loading work.mips_registers
+# Loading work.ALUModul
+add wave -position insertpoint sim:/mips_testbench/*
+run
+# instruction:00000000000000111101000011100000
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000001000111011100011000010
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# result:000xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000101001111110000011100000
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000110001111110100011000010
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# result:000xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000011001111111000011100101
+run
+# opcode:000000,rs:00011,rt:00111,rd:11110,shamt:00011,funct:100101
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000001100000000111100011100100
+# opcode:000000,rs:01100,rt:00000,rd:01111,shamt:00011,funct:100100
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000101001001111100011101010
+# opcode:000000,rs:00101,rt:00100,rd:11111,shamt:00011,funct:101010
+# result:0000000000000000000000000000000x
+# instruction:00000000111010001111100011000011
+# opcode:000000,rs:00111,rt:01000,rd:11111,shamt:00011,funct:000011
+# result:000xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000001000010011111100011000010
+# opcode:000000,rs:01000,rt:01001,rd:11111,shamt:00011,funct:000010
+# result:000xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000001001100101111100011000000
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_testbench
+# 
+# Top level modules:
+# 	mips_testbench
+vsim -voptargs=+acc work.mips_testbench
+# vsim -voptargs=+acc work.mips_testbench 
+# Loading work.mips_testbench
+# Loading work.mips_core
+# Loading work.mips_registers
+# Loading work.ALUModul
 add wave -position insertpoint sim:/mips_testbench/*
 restart
-# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'cIn'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v(6).
-# 
-#         Region: /mips_testbench/topModul/alu/add_32
 run
-# ** Warning: (vsim-7) Failed to open readmem file "reg.txt" in read mode.
-# 
-# No such file or directory. (errno = ENOENT)    : D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v(19)
-#    Time: 0 ps  Iteration: 0  Instance: /mips_testbench/topModul/Mreg
-# ** Warning: (vsim-7) Failed to open readmem file "reg.txt" in read mode.
-# 
-# No such file or directory. (errno = ENOENT)    : D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(9)
-#    Time: 0 ps  Iteration: 0  Instance: /mips_testbench
-restart
-# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'cIn'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v(6).
-# 
-#         Region: /mips_testbench/topModul/alu/add_32
+# instruction:00000000000000111101000011100000
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000001000111011100011000010
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# result:000xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000101001111110000011100000
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000110001111110100011000010
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# result:000xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000011001111111000011100101
 run
+# opcode:000000,rs:00011,rt:00111,rd:11110,shamt:00011,funct:100101
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000001100000000111100011100100
+# opcode:000000,rs:01100,rt:00000,rd:01111,shamt:00011,funct:100100
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000101001001111100011101010
+# opcode:000000,rs:00101,rt:00100,rd:11111,shamt:00011,funct:101010
+# result:0000000000000000000000000000000x
+# instruction:00000000111010001111100011000011
+# opcode:000000,rs:00111,rt:01000,rd:11111,shamt:00011,funct:000011
+# result:000xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000001000010011111100011000010
+# opcode:000000,rs:01000,rt:01001,rd:11111,shamt:00011,funct:000010
+# result:000xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000001001100101111100011000000
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
 vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mips_testbench
@@ -625,72 +507,18 @@ vsim -voptargs=+acc work.mips_testbench
 # vsim -voptargs=+acc work.mips_testbench 
 # Loading work.mips_testbench
 # Loading work.mips_core
-# Loading work.ALUModul
-# Loading work.Adder_32Bit
-# Loading work.FullAdder
-# Loading work.HalfAdder
 # Loading work.mips_registers
-# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'cIn'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v(6).
-# 
-#         Region: /mips_testbench/topModul/alu/add_32
-add wave -position insertpoint sim:/mips_testbench/topModul/*
-restart
-# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'cIn'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v(6).
-# 
-#         Region: /mips_testbench/topModul/alu/add_32
-run
-# ** Warning: (vsim-PLI-3409) Illegal binary digit 'f' in data on line 2 of file "reg.txt".    : D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(9)
-#    Time: 0 ps  Iteration: 0  Instance: /mips_testbench
-# ** Warning: (vsim-PLI-3409) Illegal binary digit 'f' in data on line 2 of file "reg.txt".    : D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(9)
-#    Time: 0 ps  Iteration: 0  Instance: /mips_testbench
-# ** Warning: (vsim-PLI-3409) Illegal binary digit 'f' in data on line 2 of file "reg.txt".    : D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(9)
-#    Time: 0 ps  Iteration: 0  Instance: /mips_testbench
-# ** Warning: (vsim-PLI-3409) Illegal binary digit 'f' in data on line 2 of file "reg.txt".    : D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(9)
-#    Time: 0 ps  Iteration: 0  Instance: /mips_testbench
-# ** Warning: (vsim-PLI-3409) Illegal binary digit 'f' in data on line 2 of file "reg.txt".    : D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(9)
-#    Time: 0 ps  Iteration: 0  Instance: /mips_testbench
-# ** Warning: (vsim-PLI-3409) Illegal binary digit 'f' in data on line 2 of file "reg.txt".    : D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(9)
-#    Time: 0 ps  Iteration: 0  Instance: /mips_testbench
-# ** Warning: (vsim-PLI-3409) Illegal binary digit 'f' in data on line 2 of file "reg.txt".    : D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v(9)
-#    Time: 0 ps  Iteration: 0  Instance: /mips_testbench
-vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mips_testbench
-# 
-# Top level modules:
-# 	mips_testbench
-vsim -voptargs=+acc work.mips_testbench
-# vsim -voptargs=+acc work.mips_testbench 
-# Loading work.mips_testbench
-# Loading work.mips_core
 # Loading work.ALUModul
-# Loading work.Adder_32Bit
-# Loading work.FullAdder
-# Loading work.HalfAdder
-# Loading work.mips_registers
-# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'cIn'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v(6).
-# 
-#         Region: /mips_testbench/topModul/alu/add_32
 add wave -position insertpoint sim:/mips_testbench/topModul/*
 run
 run
 run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
 vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mips_testbench
@@ -701,61 +529,814 @@ vsim -voptargs=+acc work.mips_testbench
 # vsim -voptargs=+acc work.mips_testbench 
 # Loading work.mips_testbench
 # Loading work.mips_core
-# Loading work.ALUModul
-# Loading work.Adder_32Bit
-# Loading work.FullAdder
-# Loading work.HalfAdder
 # Loading work.mips_registers
-# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'cIn'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v(6).
+# Loading work.ALUModul
+add wave -position insertpoint sim:/mips_testbench/*
+run
+# instruction:00000000000000111101000011100000
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000001000111011100011000010
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# result:000xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000101001111110000011100000
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000110001111110100011000010
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# result:000xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000011001111111000011100101
+run
+# opcode:000000,rs:00011,rt:00111,rd:11110,shamt:00011,funct:100101
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000001100000000111100011100100
+# opcode:000000,rs:01100,rt:00000,rd:01111,shamt:00011,funct:100100
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000101001001111100011101010
+# opcode:000000,rs:00101,rt:00100,rd:11111,shamt:00011,funct:101010
+# result:0000000000000000000000000000000x
+# instruction:00000000111010001111100011000011
+# opcode:000000,rs:00111,rt:01000,rd:11111,shamt:00011,funct:000011
+# result:000xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000001000010011111100011000010
+# opcode:000000,rs:01000,rt:01001,rd:11111,shamt:00011,funct:000010
+# result:000xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000001001100101111100011000000
+run
+# opcode:000000,rs:01001,rt:10010,rd:11111,shamt:00011,funct:000000
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxx000
+# instruction:00000001011000110111100011000100
+# opcode:000000,rs:01011,rt:00011,rd:01111,shamt:00011,funct:000100
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000001011110110111100011101010
+# opcode:000000,rs:01011,rt:11011,rd:01111,shamt:00011,funct:101010
+# result:0000000000000000000000000000000x
+# WARNING: No extended dataflow license exists
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
 # 
-#         Region: /mips_testbench/topModul/alu/add_32
-add wave -position insertpoint sim:/mips_testbench/topModul/Mreg/*
-add wave -position insertpoint sim:/mips_testbench/topModul/alu/*
-add wave -position end  sim:/mips_testbench/topModul/instruction
-add wave -position end  sim:/mips_testbench/topModul/result
-add wave -position end  sim:/mips_testbench/topModul/read_reg1
-add wave -position end  sim:/mips_testbench/topModul/read_reg2
-add wave -position end  sim:/mips_testbench/topModul/write_data
-add wave -position end  sim:/mips_testbench/topModul/Shamt
-add wave -position end  sim:/mips_testbench/topModul/Funct
-add wave -position end  sim:/mips_testbench/topModul/signal_reg_write
-add wave -position end  sim:/mips_testbench/topModul/A
-add wave -position end  sim:/mips_testbench/topModul/B
-add wave -position end  sim:/mips_testbench/topModul/Alu_Result
-add wave -position end  sim:/mips_testbench/topModul/CarryOut
-add wave -position end  sim:/mips_testbench/topModul/Zero
-add wave -position end  sim:/mips_testbench/topModul/OverFlow
-add wave -position end  sim:/mips_testbench/topModul/clk
-add wave -position end  sim:/mips_testbench/topModul/carryOut
-add wave -position end  sim:/mips_testbench/topModul/overFlow
+# Top level modules:
+# 	mips_core
+vsim -voptargs=+acc work.mips_testbench
+# vsim -voptargs=+acc work.mips_testbench 
+# Loading work.mips_testbench
+# Loading work.mips_core
+# Loading work.mips_registers
+# Loading work.ALUModul
+# WARNING: No extended dataflow license exists
+run
+# instruction:00000000000000111101000011100000
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000001000111011100011000010
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# result:000xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000101001111110000011100000
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000110001111110100011000010
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# result:000xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000011001111111000011100101
+add wave -position end  sim:/mips_testbench/topModul/alu/Funct
+add wave -position end  sim:/mips_testbench/topModul/alu/Shamt
+add wave -position end  sim:/mips_testbench/topModul/alu/A
+add wave -position end  sim:/mips_testbench/topModul/alu/B
+add wave -position end  sim:/mips_testbench/topModul/alu/Result
+add wave -position end  sim:/mips_testbench/topModul/alu/carryOut
+add wave -position end  sim:/mips_testbench/topModul/alu/Zero
+add wave -position end  sim:/mips_testbench/topModul/alu/overFlow
+add wave -position end  sim:/mips_testbench/topModul/alu/notOverFlow
+add wave -position end  sim:/mips_testbench/topModul/alu/Add
+add wave -position end  sim:/mips_testbench/topModul/alu/Sub
+add wave -position end  sim:/mips_testbench/topModul/alu/And
+add wave -position end  sim:/mips_testbench/topModul/alu/Or
+add wave -position end  sim:/mips_testbench/topModul/alu/Sra
+add wave -position end  sim:/mips_testbench/topModul/alu/Srl
+add wave -position end  sim:/mips_testbench/topModul/alu/Sll
+add wave -position end  sim:/mips_testbench/topModul/alu/Sllv
+add wave -position end  sim:/mips_testbench/topModul/alu/tempAnd
+add wave -position end  sim:/mips_testbench/topModul/alu/overFlowAdd
+add wave -position end  sim:/mips_testbench/topModul/alu/overFlowSub
+add wave -position end  sim:/mips_testbench/topModul/alu/Slt
 restart
-# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'cIn'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v(6).
-# 
-#         Region: /mips_testbench/topModul/alu/add_32
 run
+# instruction:00000000000000111101000011100000
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000001000111011100011000010
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# result:000xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000101001111110000011100000
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000110001111110100011000010
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# result:000xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000011001111111000011100101
+add wave -position end  sim:/mips_testbench/topModul/Mreg/read_data_1
+add wave -position end  sim:/mips_testbench/topModul/Mreg/read_data_2
+add wave -position end  sim:/mips_testbench/topModul/Mreg/write_data
+add wave -position end  sim:/mips_testbench/topModul/Mreg/read_reg_1
+add wave -position end  sim:/mips_testbench/topModul/Mreg/read_reg_2
+add wave -position end  sim:/mips_testbench/topModul/Mreg/write_reg
+add wave -position end  sim:/mips_testbench/topModul/Mreg/signal_reg_write
+add wave -position end  sim:/mips_testbench/topModul/Mreg/clk
+restart
+run
+# instruction:00000000000000111101000011100000
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000001000111011100011000010
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# result:000xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000101001111110000011100000
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000110001111110100011000010
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# result:000xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000011001111111000011100101
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# ** Error: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v(20): near "end": syntax error, unexpected end, expecting ';'
+# ** Error: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v(36): near "end": syntax error, unexpected end
+# C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# ** Error: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v(36): near "end": syntax error, unexpected end
+# C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
+restart
+# Loading work.mips_core
+run
+# instruction:00000000000000111101000011100000
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000001000111011100011000010
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000101001111110000011100000
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# result:00011111111111111111111111111111
+# instruction:00000000110001111110100011000010
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000011001111111000011100101
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
+restart
+# Loading work.mips_core
+run
+# instruction:00000000000000111101000011100000
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# result:00010000000000000000000000000000
+# instruction:00000000001000111011100011000010
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000101001111110000011100000
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# result:00000000000000000000000000001100
+# instruction:00000000110001111110100011000010
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000011001111111000011100101
 vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mips_testbench
 # 
 # Top level modules:
 # 	mips_testbench
-vsim -voptargs=+acc work.mips_testbench
-# vsim -voptargs=+acc work.mips_testbench 
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
+restart
 # Loading work.mips_testbench
 # Loading work.mips_core
-# Loading work.ALUModul
-# Loading work.Adder_32Bit
-# Loading work.FullAdder
-# Loading work.HalfAdder
-# Loading work.mips_registers
-# ** Warning: (vsim-3015) D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'cIn'. The port definition is at: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v(6).
+run
+# instruction:00000000000000111101000011100000
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# result:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# instruction:00000000001000111011100011000010
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000101001111110000011100000
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# result:00011111111111111111111111111111
+# instruction:00000000110001111110100011000010
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000011001111111000011100101
+# opcode:000000,rs:00011,rt:00111,rd:11110,shamt:00011,funct:100101
+# result:00000000000000000000000000000111
+# instruction:00000001100000000111100011100100
+# opcode:000000,rs:01100,rt:00000,rd:01111,shamt:00011,funct:100100
+# result:00000000000000000000000000000000
+# instruction:00000000101001001111100011101010
+# opcode:000000,rs:00101,rt:00100,rd:11111,shamt:00011,funct:101010
+# result:00000000000000000000000000000001
+# instruction:00000000111010001111100011000011
+# opcode:000000,rs:00111,rt:01000,rd:11111,shamt:00011,funct:000011
+# result:00000000000000000000000000000000
+# instruction:00000001000010011111100011000010
+# opcode:000000,rs:01000,rt:01001,rd:11111,shamt:00011,funct:000010
+# result:00000000000000000000000000000001
+# instruction:00000001001100101111100011000000
+# opcode:000000,rs:01001,rt:10010,rd:11111,shamt:00011,funct:000000
+# result:00000000000000000000000001001000
+# instruction:00000001011000110111100011000100
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
 # 
-#         Region: /mips_testbench/topModul/alu/add_32
-add wave -position insertpoint sim:/mips_testbench/topModul/*
+# Top level modules:
+# 	mips_core
+restart
+# Loading work.mips_core
 run
+# instruction:00000000000000111101000011100000
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# result:00010000000000000000000000000000
+# instruction:00000000001000111011100011000010
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000101001111110000011100000
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# result:00000000000000000000000000001100
+# instruction:00000000110001111110100011000010
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000011001111111000011100101
+# opcode:000000,rs:00011,rt:00111,rd:11110,shamt:00011,funct:100101
+# result:00000000000000000000000000000111
+# instruction:00000001100000000111100011100100
+# opcode:000000,rs:01100,rt:00000,rd:01111,shamt:00011,funct:100100
+# result:00000000000000000000000000000000
+# instruction:00000000101001001111100011101010
+# opcode:000000,rs:00101,rt:00100,rd:11111,shamt:00011,funct:101010
+# result:00000000000000000000000000000001
+# instruction:00000000111010001111100011000011
+# opcode:000000,rs:00111,rt:01000,rd:11111,shamt:00011,funct:000011
+# result:00000000000000000000000000000000
+# instruction:00000001000010011111100011000010
+# opcode:000000,rs:01000,rt:01001,rd:11111,shamt:00011,funct:000010
+# result:00000000000000000000000000000001
+# instruction:00000001001100101111100011000000
+# opcode:000000,rs:01001,rt:10010,rd:11111,shamt:00011,funct:000000
+# result:00000000000000000000000010010000
+# instruction:00000001011000110111100011000100
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
+restart
+# Loading work.mips_core
 run
+# instruction:00000000000000111101000011100000
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# result:00010000000000000000000000000000
+# instruction:00000000001000111011100011000010
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000101001111110000011100000
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# result:00000000000000000000000000001100
+# instruction:00000000110001111110100011000010
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000011001111111000011100101
+# opcode:000000,rs:00011,rt:00111,rd:11110,shamt:00011,funct:100101
+# result:00000000000000000000000000000111
+# instruction:00000001100000000111100011100100
+# opcode:000000,rs:01100,rt:00000,rd:01111,shamt:00011,funct:100100
+# result:00000000000000000000000000000000
+# instruction:00000000101001001111100011101010
+# opcode:000000,rs:00101,rt:00100,rd:11111,shamt:00011,funct:101010
+# result:00000000000000000000000000000001
+# instruction:00000000111010001111100011000011
+# opcode:000000,rs:00111,rt:01000,rd:11111,shamt:00011,funct:000011
+# result:00000000000000000000000000000000
+# instruction:00000001000010011111100011000010
+# opcode:000000,rs:01000,rt:01001,rd:11111,shamt:00011,funct:000010
+# result:00000000000000000000000000000001
+# instruction:00000001001100101111100011000000
+# opcode:000000,rs:01001,rt:10010,rd:11111,shamt:00011,funct:000000
+# result:00000000000000000000000010010000
+# instruction:00000001011000110111100011000100
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_registers
+# ** Error: D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v(32): near ";": syntax error, unexpected ';'
+# C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_registers
+# 
+# Top level modules:
+# 	mips_registers
+restart
+# Loading work.mips_registers
 run
+# instruction:00000000000000111101000011100000
+# write_reg:11010 write_data:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# write_reg:11010 write_data:00010000000000000000000000000000 
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# result:00010000000000000000000000000000
+# write_reg:11010 write_data:00010000000000000000000000000000 
+# instruction:00000000001000111011100011000010
+# write_reg:10111 write_data:00000000000000000000000000000000 
+# write_reg:10111 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000101001111110000011100000
+# write_reg:11100 write_data:00011111111111111111111111111111 
+# write_reg:11100 write_data:00000000000000000000000000001100 
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# result:00000000000000000000000000001100
+# write_reg:11100 write_data:00000000000000000000000000001100 
+# instruction:00000000110001111110100011000010
+# write_reg:11101 write_data:00000000000000000000000000000000 
+# write_reg:11101 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000011001111111000011100101
+# write_reg:11110 write_data:00000000000000000000000000000111 
+# write_reg:11110 write_data:00000000000000000000000000000111 
+# opcode:000000,rs:00011,rt:00111,rd:11110,shamt:00011,funct:100101
+# result:00000000000000000000000000000111
+# write_reg:11110 write_data:00000000000000000000000000000111 
+# instruction:00000001100000000111100011100100
+# write_reg:01111 write_data:00000000000000000000000000000000 
+# write_reg:01111 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:01100,rt:00000,rd:01111,shamt:00011,funct:100100
+# result:00000000000000000000000000000000
+# instruction:00000000101001001111100011101010
+# write_reg:11111 write_data:00000000000000000000000000000001 
+# write_reg:11111 write_data:00000000000000000000000000000001 
+# opcode:000000,rs:00101,rt:00100,rd:11111,shamt:00011,funct:101010
+# result:00000000000000000000000000000001
+# write_reg:11111 write_data:00000000000000000000000000000001 
+# instruction:00000000111010001111100011000011
+# write_reg:11111 write_data:00000000000000000000000000000000 
+# write_reg:11111 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:00111,rt:01000,rd:11111,shamt:00011,funct:000011
+# result:00000000000000000000000000000000
+# instruction:00000001000010011111100011000010
+# write_reg:11111 write_data:00000000000000000000000000000001 
+# write_reg:11111 write_data:00000000000000000000000000000001 
+# opcode:000000,rs:01000,rt:01001,rd:11111,shamt:00011,funct:000010
+# result:00000000000000000000000000000001
+# write_reg:11111 write_data:00000000000000000000000000000001 
+# instruction:00000001001100101111100011000000
+# write_reg:11111 write_data:00000000000000000000000010010000 
+# write_reg:11111 write_data:00000000000000000000000010010000 
+# opcode:000000,rs:01001,rt:10010,rd:11111,shamt:00011,funct:000000
+# result:00000000000000000000000010010000
+# instruction:00000001011000110111100011000100
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_registers
+# 
+# Top level modules:
+# 	mips_registers
+restart
+# Loading work.mips_registers
 run
+# instruction:00000000000000111101000011100000
+# write_reg:26 write_data:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# write_reg:26 write_data:00010000000000000000000000000000 
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# result:00010000000000000000000000000000
+# write_reg:26 write_data:00010000000000000000000000000000 
+# instruction:00000000001000111011100011000010
+# write_reg:23 write_data:00000000000000000000000000000000 
+# write_reg:23 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000101001111110000011100000
+# write_reg:28 write_data:00011111111111111111111111111111 
+# write_reg:28 write_data:00000000000000000000000000001100 
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# result:00000000000000000000000000001100
+# write_reg:28 write_data:00000000000000000000000000001100 
+# instruction:00000000110001111110100011000010
+# write_reg:29 write_data:00000000000000000000000000000000 
+# write_reg:29 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000011001111111000011100101
+# write_reg:30 write_data:00000000000000000000000000000111 
+# write_reg:30 write_data:00000000000000000000000000000111 
+# opcode:000000,rs:00011,rt:00111,rd:11110,shamt:00011,funct:100101
+# result:00000000000000000000000000000111
+# write_reg:30 write_data:00000000000000000000000000000111 
+# instruction:00000001100000000111100011100100
+# write_reg:15 write_data:00000000000000000000000000000000 
+# write_reg:15 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:01100,rt:00000,rd:01111,shamt:00011,funct:100100
+# result:00000000000000000000000000000000
+# instruction:00000000101001001111100011101010
+# write_reg:31 write_data:00000000000000000000000000000001 
+# write_reg:31 write_data:00000000000000000000000000000001 
+# opcode:000000,rs:00101,rt:00100,rd:11111,shamt:00011,funct:101010
+# result:00000000000000000000000000000001
+# write_reg:31 write_data:00000000000000000000000000000001 
+# instruction:00000000111010001111100011000011
+# write_reg:31 write_data:00000000000000000000000000000000 
+# write_reg:31 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:00111,rt:01000,rd:11111,shamt:00011,funct:000011
+# result:00000000000000000000000000000000
+# instruction:00000001000010011111100011000010
+# write_reg:31 write_data:00000000000000000000000000000001 
+# write_reg:31 write_data:00000000000000000000000000000001 
+# opcode:000000,rs:01000,rt:01001,rd:11111,shamt:00011,funct:000010
+# result:00000000000000000000000000000001
+# write_reg:31 write_data:00000000000000000000000000000001 
+# instruction:00000001001100101111100011000000
+# write_reg:31 write_data:00000000000000000000000010010000 
+# write_reg:31 write_data:00000000000000000000000010010000 
+# opcode:000000,rs:01001,rt:10010,rd:11111,shamt:00011,funct:000000
+# result:00000000000000000000000010010000
+# instruction:00000001011000110111100011000100
+add wave -position end  sim:/mips_testbench/topModul/Mreg/read_data_1
+add wave -position end  sim:/mips_testbench/topModul/Mreg/read_data_2
+add wave -position end  sim:/mips_testbench/topModul/Mreg/write_data
+add wave -position end  sim:/mips_testbench/topModul/Mreg/read_reg_1
+add wave -position end  sim:/mips_testbench/topModul/Mreg/read_reg_2
+add wave -position end  sim:/mips_testbench/topModul/Mreg/write_reg
+add wave -position end  sim:/mips_testbench/topModul/Mreg/signal_reg_write
+add wave -position end  sim:/mips_testbench/topModul/Mreg/clk
+add wave -position end  sim:/mips_testbench/topModul/Mreg/#ALWAYS#22/read_data_1
+add wave -position end  sim:/mips_testbench/topModul/Mreg/#ALWAYS#22/read_data_2
+add wave -position end  sim:/mips_testbench/topModul/Mreg/#ALWAYS#22/registers
 run
+# write_reg:15 write_data:00000000000000000010010000000000 
+# write_reg:15 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:01011,rt:00011,rd:01111,shamt:00011,funct:000100
+# result:00000000000000000000000000000000
+# write_reg:15 write_data:00000000000000000000000000000000 
+# instruction:00000001011110110111100011101010
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# opcode:000000,rs:01011,rt:11011,rd:01111,shamt:00011,funct:101010
+# result:00000000000000000000000000000001
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+restart
 run
+# instruction:00000000000000111101000011100000
+# write_reg:26 write_data:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# write_reg:26 write_data:00010000000000000000000000000000 
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# result:00010000000000000000000000000000
+# write_reg:26 write_data:00010000000000000000000000000000 
+# instruction:00000000001000111011100011000010
+# write_reg:23 write_data:00000000000000000000000000000000 
+# write_reg:23 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000101001111110000011100000
+# write_reg:28 write_data:00011111111111111111111111111111 
+# write_reg:28 write_data:00000000000000000000000000001100 
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# result:00000000000000000000000000001100
+# write_reg:28 write_data:00000000000000000000000000001100 
+# instruction:00000000110001111110100011000010
+# write_reg:29 write_data:00000000000000000000000000000000 
+# write_reg:29 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000011001111111000011100101
+# write_reg:30 write_data:00000000000000000000000000000111 
+# write_reg:30 write_data:00000000000000000000000000000111 
+# opcode:000000,rs:00011,rt:00111,rd:11110,shamt:00011,funct:100101
+# result:00000000000000000000000000000111
+# write_reg:30 write_data:00000000000000000000000000000111 
+# instruction:00000001100000000111100011100100
+# write_reg:15 write_data:00000000000000000000000000000000 
+# write_reg:15 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:01100,rt:00000,rd:01111,shamt:00011,funct:100100
+# result:00000000000000000000000000000000
+# instruction:00000000101001001111100011101010
+# write_reg:31 write_data:00000000000000000000000000000001 
+# write_reg:31 write_data:00000000000000000000000000000001 
+# opcode:000000,rs:00101,rt:00100,rd:11111,shamt:00011,funct:101010
+# result:00000000000000000000000000000001
+# write_reg:31 write_data:00000000000000000000000000000001 
+# instruction:00000000111010001111100011000011
+# write_reg:31 write_data:00000000000000000000000000000000 
+# write_reg:31 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:00111,rt:01000,rd:11111,shamt:00011,funct:000011
+# result:00000000000000000000000000000000
+# instruction:00000001000010011111100011000010
+# write_reg:31 write_data:00000000000000000000000000000001 
+# write_reg:31 write_data:00000000000000000000000000000001 
+# opcode:000000,rs:01000,rt:01001,rd:11111,shamt:00011,funct:000010
+# result:00000000000000000000000000000001
+# write_reg:31 write_data:00000000000000000000000000000001 
+# instruction:00000001001100101111100011000000
+# write_reg:31 write_data:00000000000000000000000010010000 
+# write_reg:31 write_data:00000000000000000000000010010000 
+# opcode:000000,rs:01001,rt:10010,rd:11111,shamt:00011,funct:000000
+# result:00000000000000000000000010010000
+# instruction:00000001011000110111100011000100
+restart
 run
+# instruction:00000000000000111101000011100000
+# write_reg:26 write_data:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# write_reg:26 write_data:00010000000000000000000000000000 
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# result:00010000000000000000000000000000
+# write_reg:26 write_data:00010000000000000000000000000000 
+# instruction:00000000001000111011100011000010
+# write_reg:23 write_data:00000000000000000000000000000000 
+# write_reg:23 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000101001111110000011100000
+# write_reg:28 write_data:00011111111111111111111111111111 
+# write_reg:28 write_data:00000000000000000000000000001100 
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# result:00000000000000000000000000001100
+# write_reg:28 write_data:00000000000000000000000000001100 
+# instruction:00000000110001111110100011000010
+# write_reg:29 write_data:00000000000000000000000000000000 
+# write_reg:29 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000011001111111000011100101
+# write_reg:30 write_data:00000000000000000000000000000111 
+# write_reg:30 write_data:00000000000000000000000000000111 
+# opcode:000000,rs:00011,rt:00111,rd:11110,shamt:00011,funct:100101
+# result:00000000000000000000000000000111
+# write_reg:30 write_data:00000000000000000000000000000111 
+# instruction:00000001100000000111100011100100
+# write_reg:15 write_data:00000000000000000000000000000000 
+# write_reg:15 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:01100,rt:00000,rd:01111,shamt:00011,funct:100100
+# result:00000000000000000000000000000000
+# instruction:00000000101001001111100011101010
+# write_reg:31 write_data:00000000000000000000000000000001 
+# write_reg:31 write_data:00000000000000000000000000000001 
+# opcode:000000,rs:00101,rt:00100,rd:11111,shamt:00011,funct:101010
+# result:00000000000000000000000000000001
+# write_reg:31 write_data:00000000000000000000000000000001 
+# instruction:00000000111010001111100011000011
+# write_reg:31 write_data:00000000000000000000000000000000 
+# write_reg:31 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:00111,rt:01000,rd:11111,shamt:00011,funct:000011
+# result:00000000000000000000000000000000
+# instruction:00000001000010011111100011000010
+# write_reg:31 write_data:00000000000000000000000000000001 
+# write_reg:31 write_data:00000000000000000000000000000001 
+# opcode:000000,rs:01000,rt:01001,rd:11111,shamt:00011,funct:000010
+# result:00000000000000000000000000000001
+# write_reg:31 write_data:00000000000000000000000000000001 
+# instruction:00000001001100101111100011000000
+# write_reg:31 write_data:00000000000000000000000010010000 
+# write_reg:31 write_data:00000000000000000000000010010000 
+# opcode:000000,rs:01001,rt:10010,rd:11111,shamt:00011,funct:000000
+# result:00000000000000000000000010010000
+# instruction:00000001011000110111100011000100
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_registers
+# 
+# Top level modules:
+# 	mips_registers
+restart
+# Loading work.mips_registers
+run
+# instruction:00000000000000111101000011100000
+# write_reg:26 write_data:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# write_reg:26 write_data:00010000000000000000000000000000 
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# result:00010000000000000000000000000000
+# write_reg:26 write_data:00010000000000000000000000000000 
+# instruction:00000000001000111011100011000010
+# write_reg:23 write_data:00000000000000000000000000000000 
+# write_reg:23 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000101001111110000011100000
+# write_reg:28 write_data:00011111111111111111111111111111 
+# write_reg:28 write_data:00000000000000000000000000001100 
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# result:00000000000000000000000000001100
+# write_reg:28 write_data:00000000000000000000000000001100 
+# instruction:00000000110001111110100011000010
+# write_reg:29 write_data:00000000000000000000000000000000 
+# write_reg:29 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000011001111111000011100101
+# write_reg:30 write_data:00000000000000000000000000000111 
+# write_reg:30 write_data:00000000000000000000000000000111 
+# opcode:000000,rs:00011,rt:00111,rd:11110,shamt:00011,funct:100101
+# result:00000000000000000000000000000111
+# write_reg:30 write_data:00000000000000000000000000000111 
+# instruction:00000001100000000111100011100100
+# write_reg:15 write_data:00000000000000000000000000000000 
+# write_reg:15 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:01100,rt:00000,rd:01111,shamt:00011,funct:100100
+# result:00000000000000000000000000000000
+# instruction:00000000101001001111100011101010
+# write_reg:31 write_data:00000000000000000000000000000001 
+# write_reg:31 write_data:00000000000000000000000000000001 
+# opcode:000000,rs:00101,rt:00100,rd:11111,shamt:00011,funct:101010
+# result:00000000000000000000000000000001
+# write_reg:31 write_data:00000000000000000000000000000001 
+# instruction:00000000111010001111100011000011
+# write_reg:31 write_data:00000000000000000000000000000000 
+# write_reg:31 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:00111,rt:01000,rd:11111,shamt:00011,funct:000011
+# result:00000000000000000000000000000000
+# instruction:00000001000010011111100011000010
+# write_reg:31 write_data:00000000000000000000000000000001 
+# write_reg:31 write_data:00000000000000000000000000000001 
+# opcode:000000,rs:01000,rt:01001,rd:11111,shamt:00011,funct:000010
+# result:00000000000000000000000000000001
+# write_reg:31 write_data:00000000000000000000000000000001 
+# instruction:00000001001100101111100011000000
+# write_reg:31 write_data:00000000000000000000000010010000 
+# write_reg:31 write_data:00000000000000000000000010010000 
+# opcode:000000,rs:01001,rt:10010,rd:11111,shamt:00011,funct:000000
+# result:00000000000000000000000010010000
+# instruction:00000001011000110111100011000100
+vlog -work work -O0 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_registers
+# 
+# Top level modules:
+# 	mips_registers
+restart
+# Loading work.mips_registers
+run
+# instruction:00000000000000111101000011100000
+# write_reg:26 write_data:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+# write_reg:26 write_data:00010000000000000000000000000000 
+# opcode:000000,rs:00000,rt:00011,rd:11010,shamt:00011,funct:100000
+# result:00010000000000000000000000000000
+# write_reg:26 write_data:00010000000000000000000000000000 
+# instruction:00000000001000111011100011000010
+# write_reg:23 write_data:00000000000000000000000000000000 
+# write_reg:23 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:00001,rt:00011,rd:10111,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000101001111110000011100000
+# write_reg:28 write_data:00011111111111111111111111111111 
+# write_reg:28 write_data:00000000000000000000000000001100 
+# opcode:000000,rs:00101,rt:00111,rd:11100,shamt:00011,funct:100000
+# result:00000000000000000000000000001100
+# write_reg:28 write_data:00000000000000000000000000001100 
+# instruction:00000000110001111110100011000010
+# write_reg:29 write_data:00000000000000000000000000000000 
+# write_reg:29 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:00110,rt:00111,rd:11101,shamt:00011,funct:000010
+# result:00000000000000000000000000000000
+# instruction:00000000011001111111000011100101
+# write_reg:30 write_data:00000000000000000000000000000111 
+# write_reg:30 write_data:00000000000000000000000000000111 
+# opcode:000000,rs:00011,rt:00111,rd:11110,shamt:00011,funct:100101
+# result:00000000000000000000000000000111
+# write_reg:30 write_data:00000000000000000000000000000111 
+# instruction:00000001100000000111100011100100
+# write_reg:15 write_data:00000000000000000000000000000000 
+# write_reg:15 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:01100,rt:00000,rd:01111,shamt:00011,funct:100100
+# result:00000000000000000000000000000000
+# instruction:00000000101001001111100011101010
+# write_reg:31 write_data:00000000000000000000000000000001 
+# write_reg:31 write_data:00000000000000000000000000000001 
+# opcode:000000,rs:00101,rt:00100,rd:11111,shamt:00011,funct:101010
+# result:00000000000000000000000000000001
+# write_reg:31 write_data:00000000000000000000000000000001 
+# instruction:00000000111010001111100011000011
+# write_reg:31 write_data:00000000000000000000000000000000 
+# write_reg:31 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:00111,rt:01000,rd:11111,shamt:00011,funct:000011
+# result:00000000000000000000000000000000
+# instruction:00000001000010011111100011000010
+# write_reg:31 write_data:00000000000000000000000000000001 
+# write_reg:31 write_data:00000000000000000000000000000001 
+# opcode:000000,rs:01000,rt:01001,rd:11111,shamt:00011,funct:000010
+# result:00000000000000000000000000000001
+# write_reg:31 write_data:00000000000000000000000000000001 
+# instruction:00000001001100101111100011000000
+# write_reg:31 write_data:00000000000000000000000010010000 
+# write_reg:31 write_data:00000000000000000000000010010000 
+# opcode:000000,rs:01001,rt:10010,rd:11111,shamt:00011,funct:000000
+# result:00000000000000000000000010010000
+# instruction:00000001011000110111100011000100
+run
+# write_reg:15 write_data:00000000000000000010010000000000 
+# write_reg:15 write_data:00000000000000000000000000000000 
+# opcode:000000,rs:01011,rt:00011,rd:01111,shamt:00011,funct:000100
+# result:00000000000000000000000000000000
+# write_reg:15 write_data:00000000000000000000000000000000 
+# instruction:00000001011110110111100011101010
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# opcode:000000,rs:01011,rt:11011,rd:01111,shamt:00011,funct:101010
+# result:00000000000000000000000000000001
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+run
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 
+# write_reg:15 write_data:00000000000000000000000000000001 

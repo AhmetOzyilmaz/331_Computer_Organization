@@ -28,6 +28,7 @@ module mips_registers(
 	always @ (negedge clk)
 	begin
 		if(signal_reg_write) begin
+			$display("write_reg:%d write_data:%b ",write_reg, write_data);	
 			registers[write_reg] = write_data;
 		end
 	end

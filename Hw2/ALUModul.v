@@ -10,7 +10,8 @@ module ALUModul(
 	wire tempAnd;
 	wire overFlowAdd,overFlowSub,Slt;
 	
-	Adder_32Bit add_32(Add,carryOut,A,B,0);
+	assign {carryOut,Add} = A + B;
+
 	assign Sub = A - B;
 	
 	assign overFlowAdd = ((A[31] == B[31]) && (Add[31] != A[31])) ? 1 : 0;
