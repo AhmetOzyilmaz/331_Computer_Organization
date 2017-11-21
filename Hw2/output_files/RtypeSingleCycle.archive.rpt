@@ -1,5 +1,5 @@
 Archive Project report for RtypeSingleCycle
-Sun Nov 19 12:55:18 2017
+Mon Nov 20 11:48:00 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -35,7 +35,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Sun Nov 19 12:55:18 2017 ;
+; Archive Project Status ; Successful - Mon Nov 20 11:48:00 2017 ;
 ; Revision Name          ; RtypeSingleCycle                      ;
 ; Top-level Entity Name  ; mips_core                             ;
 ; Family                 ; Cyclone III                           ;
@@ -57,8 +57,8 @@ Info: Generated report 'RtypeSingleCycle.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/altera/13.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus II 64-Bit Shell was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 362 megabytes
-    Info: Processing ended: Sun Nov 19 12:55:19 2017
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Mon Nov 20 11:48:00 2017
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
@@ -68,13 +68,11 @@ Info: Quartus II 64-Bit Shell was successful. 0 errors, 0 warnings
 ; File Name                                                   ;
 +-------------------------------------------------------------+
 ; 111044014.qpf                                               ;
-; Adder_32Bit.v                                               ;
 ; ALU_testbench.v                                             ;
 ; ALUModul.v                                                  ;
 ; assignment_defaults.qdf                                     ;
+; db/RtypeSingleCycle.cmp.hdb                                 ;
 ; db/RtypeSingleCycle.db_info                                 ;
-; FullAdder.v                                                 ;
-; HalfAdder.v                                                 ;
 ; incremental_db/compiled_partitions/RtypeSingleCycle.db_info ;
 ; mips_core.v                                                 ;
 ; mips_registers.v                                            ;

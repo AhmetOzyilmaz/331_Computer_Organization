@@ -1,26 +1,24 @@
 Quartus II Archive log --	D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/111044014.qarlog
 
 Archive:	D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/111044014.qar
-Date:		Sun Nov 19 12:55:18 2017
+Date:		Mon Nov 20 11:48:00 2017
 Quartus II 64-Bit		13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 	=========== Files Selected: ===========
 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/111044014.qpf
 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v
 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALU_testbench.v
-D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Adder_32Bit.v
-D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/FullAdder.v
-D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/HalfAdder.v
 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/RtypeSingleCycle.qsf
 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/Tmips_registers.v
 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/assignment_defaults.qdf
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/db/RtypeSingleCycle.cmp.hdb
 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/db/RtypeSingleCycle.db_info
 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/incremental_db/compiled_partitions/RtypeSingleCycle.db_info
 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v
 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v
 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_testbench.v
 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/reg.txt
-	======= Total: 15 files to archive =======
+	======= Total: 13 files to archive =======
 
 	================ Status: ===============
 All files archived successfully.

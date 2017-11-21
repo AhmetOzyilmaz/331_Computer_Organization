@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RtypeSingleCycle
-Mon Nov 20 10:50:19 2017
+Mon Nov 20 12:23:37 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -45,7 +45,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 20 10:50:19 2017      ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 20 12:23:37 2017      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; RtypeSingleCycle                           ;
 ; Top-level Entity Name              ; mips_core                                  ;
@@ -168,6 +168,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; mips_core.v                      ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_core.v      ;         ;
 ; mips_registers.v                 ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/mips_registers.v ;         ;
 ; ALUModul.v                       ; yes             ; User Verilog HDL File  ; D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/ALUModul.v       ;         ;
+; reg.txt                          ; yes             ; Auto-Found File        ; D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/reg.txt          ;         ;
 +----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------+---------+
 
 
@@ -271,7 +272,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon Nov 20 10:50:16 2017
+    Info: Processing started: Mon Nov 20 12:23:34 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 111044014 -c RtypeSingleCycle
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file mips_core.v
@@ -284,10 +285,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file alu_tes
     Info (12023): Found entity 1: ALU_testbench
 Info (12021): Found 1 design units, including 1 entities, in source file alumodul.v
     Info (12023): Found entity 1: ALUModul
-Warning (12019): Can't analyze file -- file FullAdder.v is missing
-Warning (12019): Can't analyze file -- file HalfAdder.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file tmips_registers.v
     Info (12023): Found entity 1: Tmips_registers
+Info (12021): Found 1 design units, including 1 entities, in source file uart.vhd
+    Info (12023): Found entity 1: UART
 Info (12127): Elaborating entity "mips_core" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at mips_core.v(2): object "opcode" assigned a value but never read
 Warning (10755): Verilog HDL warning at mips_core.v(34): assignments to clk create a combinational loop
@@ -369,9 +370,9 @@ Warning (21074): Design contains 32 input pin(s) that do not drive logic
 Info (21057): Implemented 64 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 32 input pins
     Info (21059): Implemented 32 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 75 warnings
-    Info: Peak virtual memory: 508 megabytes
-    Info: Processing ended: Mon Nov 20 10:50:19 2017
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 73 warnings
+    Info: Peak virtual memory: 553 megabytes
+    Info: Processing ended: Mon Nov 20 12:23:37 2017
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 

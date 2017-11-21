@@ -1,0 +1,20 @@
+LIBRARY CYCLONEIII;
+LIBRARY IEEE;
+USE CYCLONEIII.CYCLONEIII_COMPONENTS.ALL
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY 	UART IS
+    PORT (
+	HEX0 : OUT std_logic_vector(6 DOWNTO 0);
+	HEX1 : OUT std_logic_vector(6 DOWNTO 0);
+	HEX2 : OUT std_logic_vector(6 DOWNTO 0);
+	HEX3 : OUT std_logic_vector(6 DOWNTO 0);
+	CLOCK_50 : IN std_logic;
+	SW : IN std_logic_vector(9 DOWNTO 0);
+	KEY : IN std_logic_vector(3 DOWNTO 0);
+	LEDR : OUT std_logic_vector(9 DOWNTO 0);
+	UART_TXD : OUT std_logic;
+	UART_RXD : IN std_logic;
+	LEDG : OUT std_logic_vector(7 DOWNTO 0)
+	);
+END UART;

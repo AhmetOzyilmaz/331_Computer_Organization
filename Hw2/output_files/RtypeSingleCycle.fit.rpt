@@ -1,5 +1,5 @@
 Fitter report for RtypeSingleCycle
-Sun Nov 19 12:37:04 2017
+Mon Nov 20 11:47:08 2017
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -58,7 +58,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Sun Nov 19 12:37:04 2017      ;
+; Fitter Status                      ; Successful - Mon Nov 20 11:47:08 2017      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; RtypeSingleCycle                           ;
 ; Top-level Entity Name              ; mips_core                                  ;
@@ -87,6 +87,7 @@ applicable agreement for further details.
 ; Minimum Core Junction Temperature                                          ; 0                                     ;                                       ;
 ; Maximum Core Junction Temperature                                          ; 85                                    ;                                       ;
 ; Fit Attempts to Skip                                                       ; 0                                     ; 0.0                                   ;
+; Device I/O Standard                                                        ; 2.5 V                                 ;                                       ;
 ; Use smart compilation                                                      ; Off                                   ; Off                                   ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                                    ; On                                    ;
 ; Enable compact report table                                                ; Off                                   ; Off                                   ;
@@ -148,76 +149,44 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------+
-; I/O Assignment Warnings                         ;
-+-----------------+-------------------------------+
-; Pin Name        ; Reason                        ;
-+-----------------+-------------------------------+
-; instruction[11] ; Incomplete set of assignments ;
-; instruction[12] ; Incomplete set of assignments ;
-; instruction[13] ; Incomplete set of assignments ;
-; instruction[14] ; Incomplete set of assignments ;
-; instruction[15] ; Incomplete set of assignments ;
-; instruction[16] ; Incomplete set of assignments ;
-; instruction[17] ; Incomplete set of assignments ;
-; instruction[18] ; Incomplete set of assignments ;
-; instruction[19] ; Incomplete set of assignments ;
-; instruction[20] ; Incomplete set of assignments ;
-; instruction[21] ; Incomplete set of assignments ;
-; instruction[22] ; Incomplete set of assignments ;
-; instruction[23] ; Incomplete set of assignments ;
-; instruction[24] ; Incomplete set of assignments ;
-; instruction[25] ; Incomplete set of assignments ;
-; instruction[26] ; Incomplete set of assignments ;
-; instruction[27] ; Incomplete set of assignments ;
-; instruction[28] ; Incomplete set of assignments ;
-; instruction[29] ; Incomplete set of assignments ;
-; instruction[30] ; Incomplete set of assignments ;
-; instruction[31] ; Incomplete set of assignments ;
-; result[0]       ; Incomplete set of assignments ;
-; result[1]       ; Incomplete set of assignments ;
-; result[2]       ; Incomplete set of assignments ;
-; result[3]       ; Incomplete set of assignments ;
-; result[4]       ; Incomplete set of assignments ;
-; result[5]       ; Incomplete set of assignments ;
-; result[6]       ; Incomplete set of assignments ;
-; result[7]       ; Incomplete set of assignments ;
-; result[8]       ; Incomplete set of assignments ;
-; result[9]       ; Incomplete set of assignments ;
-; result[10]      ; Incomplete set of assignments ;
-; result[11]      ; Incomplete set of assignments ;
-; result[12]      ; Incomplete set of assignments ;
-; result[13]      ; Incomplete set of assignments ;
-; result[14]      ; Incomplete set of assignments ;
-; result[15]      ; Incomplete set of assignments ;
-; result[16]      ; Incomplete set of assignments ;
-; result[17]      ; Incomplete set of assignments ;
-; result[18]      ; Incomplete set of assignments ;
-; result[19]      ; Incomplete set of assignments ;
-; result[20]      ; Incomplete set of assignments ;
-; result[21]      ; Incomplete set of assignments ;
-; result[22]      ; Incomplete set of assignments ;
-; result[23]      ; Incomplete set of assignments ;
-; result[24]      ; Incomplete set of assignments ;
-; result[25]      ; Incomplete set of assignments ;
-; result[26]      ; Incomplete set of assignments ;
-; result[27]      ; Incomplete set of assignments ;
-; result[28]      ; Incomplete set of assignments ;
-; result[29]      ; Incomplete set of assignments ;
-; result[30]      ; Incomplete set of assignments ;
-; result[31]      ; Incomplete set of assignments ;
-; instruction[0]  ; Incomplete set of assignments ;
-; instruction[1]  ; Incomplete set of assignments ;
-; instruction[2]  ; Incomplete set of assignments ;
-; instruction[3]  ; Incomplete set of assignments ;
-; instruction[4]  ; Incomplete set of assignments ;
-; instruction[5]  ; Incomplete set of assignments ;
-; instruction[10] ; Incomplete set of assignments ;
-; instruction[9]  ; Incomplete set of assignments ;
-; instruction[8]  ; Incomplete set of assignments ;
-; instruction[7]  ; Incomplete set of assignments ;
-; instruction[6]  ; Incomplete set of assignments ;
-+-----------------+-------------------------------+
++---------------------------------------------------+
+; I/O Assignment Warnings                           ;
++------------+--------------------------------------+
+; Pin Name   ; Reason                               ;
++------------+--------------------------------------+
+; result[0]  ; Missing drive strength and slew rate ;
+; result[1]  ; Missing drive strength and slew rate ;
+; result[2]  ; Missing drive strength and slew rate ;
+; result[3]  ; Missing drive strength and slew rate ;
+; result[4]  ; Missing drive strength and slew rate ;
+; result[5]  ; Missing drive strength and slew rate ;
+; result[6]  ; Missing drive strength and slew rate ;
+; result[7]  ; Missing drive strength and slew rate ;
+; result[8]  ; Missing drive strength and slew rate ;
+; result[9]  ; Missing drive strength and slew rate ;
+; result[10] ; Missing drive strength and slew rate ;
+; result[11] ; Missing drive strength and slew rate ;
+; result[12] ; Missing drive strength and slew rate ;
+; result[13] ; Missing drive strength and slew rate ;
+; result[14] ; Missing drive strength and slew rate ;
+; result[15] ; Missing drive strength and slew rate ;
+; result[16] ; Missing drive strength and slew rate ;
+; result[17] ; Missing drive strength and slew rate ;
+; result[18] ; Missing drive strength and slew rate ;
+; result[19] ; Missing drive strength and slew rate ;
+; result[20] ; Missing drive strength and slew rate ;
+; result[21] ; Missing drive strength and slew rate ;
+; result[22] ; Missing drive strength and slew rate ;
+; result[23] ; Missing drive strength and slew rate ;
+; result[24] ; Missing drive strength and slew rate ;
+; result[25] ; Missing drive strength and slew rate ;
+; result[26] ; Missing drive strength and slew rate ;
+; result[27] ; Missing drive strength and slew rate ;
+; result[28] ; Missing drive strength and slew rate ;
+; result[29] ; Missing drive strength and slew rate ;
+; result[30] ; Missing drive strength and slew rate ;
+; result[31] ; Missing drive strength and slew rate ;
++------------+--------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------+
@@ -1424,11 +1393,11 @@ Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X0_Y20 to location X9_Y29
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.05 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.06 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1437,7 +1406,7 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/Hw2/output_files/RtypeSingleCycle.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 786 megabytes
-    Info: Processing ended: Sun Nov 19 12:37:04 2017
+    Info: Processing ended: Mon Nov 20 11:47:08 2017
     Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:10
 
