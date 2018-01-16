@@ -1,0 +1,240 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do 111044014_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014 {D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_sign_extender.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_sign_extender
+# 
+# Top level modules:
+# 	mips_sign_extender
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014 {D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_program_counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_program_counter
+# 
+# Top level modules:
+# 	mips_program_counter
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014 {D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_5bit_3input.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_mux_5bit_3input
+# 
+# Top level modules:
+# 	mips_mux_5bit_3input
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014 {D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit_4input.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_mux_32bit_4input
+# 
+# Top level modules:
+# 	mips_mux_32bit_4input
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014 {D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_mux_32bit
+# 
+# Top level modules:
+# 	mips_mux_32bit
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014 {D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_load_word_halfword_byte_selector.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_load_word_halfword_byte_selector
+# 
+# Top level modules:
+# 	mips_load_word_halfword_byte_selector
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014 {D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_core.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014 {D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_control.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_control
+# 
+# Top level modules:
+# 	mips_control
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014 {D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_alu_control.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_alu_control
+# 
+# Top level modules:
+# 	mips_alu_control
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014 {D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_alu
+# 
+# Top level modules:
+# 	mips_alu
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014 {D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_registers.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_registers
+# 
+# Top level modules:
+# 	mips_registers
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014 {D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_instr_mem.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_instr_mem
+# 
+# Top level modules:
+# 	mips_instr_mem
+# vlog -vlog01compat -work work +incdir+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014 {D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_data_mem.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_data_mem
+# 
+# Top level modules:
+# 	mips_data_mem
+# 
+vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_alu.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_alu
+# 
+# Top level modules:
+# 	mips_alu
+vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_alu_control.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_alu_control
+# 
+# Top level modules:
+# 	mips_alu_control
+vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_control.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_control
+# 
+# Top level modules:
+# 	mips_control
+vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_core.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_core
+# 
+# Top level modules:
+# 	mips_core
+vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_data_mem.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_data_mem
+# 
+# Top level modules:
+# 	mips_data_mem
+vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_instr_mem.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_instr_mem
+# 
+# Top level modules:
+# 	mips_instr_mem
+vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_load_word_halfword_byte_selector.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_load_word_halfword_byte_selector
+# 
+# Top level modules:
+# 	mips_load_word_halfword_byte_selector
+vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_5bit.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_mux_5bit
+# 
+# Top level modules:
+# 	mips_mux_5bit
+vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_5bit_3input.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_mux_5bit_3input
+# 
+# Top level modules:
+# 	mips_mux_5bit_3input
+vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_mux_32bit
+# 
+# Top level modules:
+# 	mips_mux_32bit
+vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit_3input.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_mux_32bit_3input
+# 
+# Top level modules:
+# 	mips_mux_32bit_3input
+vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit_4input.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_mux_32bit_4input
+# 
+# Top level modules:
+# 	mips_mux_32bit_4input
+vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_program_counter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_program_counter
+# 
+# Top level modules:
+# 	mips_program_counter
+vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_registers.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_registers
+# 
+# Top level modules:
+# 	mips_registers
+vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_sign_extender.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_sign_extender
+# 
+# Top level modules:
+# 	mips_sign_extender
+vlog -reportprogress 300 -work work D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_testbench
+# 
+# Top level modules:
+# 	mips_testbench
+vsim -voptargs=+acc work.mips_testbench
+# vsim -voptargs=+acc work.mips_testbench 
+# Loading work.mips_testbench
+# Loading work.mips_core
+# Loading work.mips_instr_mem
+# Loading work.mips_control
+# Loading work.mips_mux_5bit_3input
+# Loading work.mips_registers
+# Loading work.mips_sign_extender
+# Loading work.mips_alu_control
+# Loading work.mips_mux_32bit
+# Loading work.mips_program_counter
+# Loading work.mips_alu
+# Loading work.mips_data_mem
+# Loading work.mips_mux_32bit_4input
+# Loading work.mips_load_word_halfword_byte_selector
+add wave -position insertpoint sim:/mips_testbench/*
+run
+# Result:          1
+# 
+run
+# Result:          1
+# 
+run
+# Result:          1
+# 
+run
+# Result:          1
+# 
+run
+# Result:          0
+# 
+run
+# Result:          0
+# 
+run
+# Result: 4294901760
+# 
+run
+# Result:          0
+# 
+run
+# Result:          1
+# 
+run
+# Result: 4294945450
+# 
+run
+# Result:          4
+# 
+run
+# Result:          1
+# 

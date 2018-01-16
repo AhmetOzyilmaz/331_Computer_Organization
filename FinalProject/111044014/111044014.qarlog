@@ -1,0 +1,37 @@
+Quartus II Archive log --	D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/111044014.qarlog
+
+Archive:	D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/111044014.qar
+Date:		Wed Jan 03 17:37:51 2018
+Quartus II 64-Bit		13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+	=========== Files Selected: ===========
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/111044014.qpf
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/111044014.qsf
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/111044014.tcl
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/data.mem
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/db/111044014.cmp.hdb
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/db/111044014.db_info
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/incremental_db/compiled_partitions/111044014.db_info
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/instruction.mem
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_alu.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_alu_control.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_control.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_core.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_data_mem.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_instr_mem.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_load_word_halfword_byte_selector.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit_3input.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit_4input.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_5bit.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_5bit_3input.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_program_counter.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_registers.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_sign_extender.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_testbench.v
+D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/registers.mem
+c:/altera/13.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 26 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

@@ -1,0 +1,309 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\2017-2018\Organizasyon\Projects\331_Computer_Organization\FinalProject\Upload\111044014\simulation\modelsim
+vmips_alu
+I3PHOSf:7KIcHT9HbDjJY33
+VC3@;CImEUFfBJQoi>eaVI0
+Z1 dD:\2017-2018\Organizasyon\Projects\331_Computer_Organization\FinalProject\Upload\111044014\simulation\modelsim
+w1483101679
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_alu.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_alu.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-work work -O0
+!i10b 1
+!s100 4WJc3jFGNBTjDQK1lCXbH3
+!s85 0
+!s108 1514989352.094000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_alu.v|
+!s90 -reportprogress|300|-work|work|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_alu.v|
+!s101 -O0
+vmips_alu_control
+IXj5OPk;eOfhZ4Ko]<]@9o1
+VgI4O7nG[H`o0?nV`iQ74Q2
+R1
+w1514988786
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_alu_control.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_alu_control.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 Z^KENiW65b`Bh>l7Nnc]S2
+!s85 0
+!s108 1514989352.587000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_alu_control.v|
+!s90 -reportprogress|300|-work|work|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_alu_control.v|
+!s101 -O0
+vmips_control
+Ia7LCEkS6@3ee2AWfc;GT43
+V09M5>_3Wc4Q_O=o^DM_HZ2
+R1
+w1514988434
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_control.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_control.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 ^?0AoAZ764JHTB]`R43fl1
+!s85 0
+!s108 1514989352.775000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_control.v|
+!s90 -reportprogress|300|-work|work|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_control.v|
+!s101 -O0
+vmips_core
+IDg>bN3Qel_V>Gg?BgZ3Qd0
+VmU<:a=noQ@KaDejboYbA_0
+R1
+w1514988087
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_core.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_core.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 Yff9dajEO`2HFCg7<45=W2
+!s85 0
+!s108 1514989352.985000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_core.v|
+!s90 -reportprogress|300|-work|work|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_core.v|
+!s101 -O0
+vmips_data_mem
+IGQ4UNc<@zZ<d5Q60PH=OT2
+Vih=zm[>`eQ?JGL4GCb0lV3
+R1
+w1482758933
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_data_mem.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_data_mem.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 D?;EAk=FTA8VZJM=8e:k:2
+!s85 0
+!s108 1514989353.176000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_data_mem.v|
+!s90 -reportprogress|300|-work|work|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_data_mem.v|
+!s101 -O0
+vmips_instr_mem
+IIHPF:4iLMhl0dcHNf;C[L3
+VWI?LDEJ@`5imZY0<6h3QT2
+R1
+w1482754716
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_instr_mem.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_instr_mem.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 HcZc36SbJea8mcDcIfZgi1
+!s85 0
+!s108 1514989353.376000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_instr_mem.v|
+!s90 -reportprogress|300|-work|work|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_instr_mem.v|
+!s101 -O0
+vmips_load_word_halfword_byte_selector
+I9UV<]V4i][fH2nT6N`^nJ0
+Vm@24CVV5KPMBX4@6N^dmn2
+R1
+w1483122369
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_load_word_halfword_byte_selector.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_load_word_halfword_byte_selector.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 1VcNd;<l2RoUW7h?AWVK>3
+!s85 0
+!s108 1514989353.555000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_load_word_halfword_byte_selector.v|
+!s90 -reportprogress|300|-work|work|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_load_word_halfword_byte_selector.v|
+!s101 -O0
+vmips_mux_32bit
+I2g8aRijE>M0m0Id5jcUbG1
+V>B61OQGoIzdl]kJ2TB?Wa2
+R1
+w1482529039
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 54^h];39hfi6QhJDX8lLk0
+!s85 0
+!s108 1514989354.115000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit.v|
+!s90 -reportprogress|300|-work|work|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit.v|
+!s101 -O0
+vmips_mux_32bit_3input
+IDH9XeWUh9L<[gDmUN3ROE0
+V<7ZQmLN@N<0ARz4VBVJW>0
+R1
+w1483091871
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit_3input.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit_3input.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 ja?ii:Jz_VU`]PW_8;f243
+!s85 0
+!s108 1514989354.290000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit_3input.v|
+!s90 -reportprogress|300|-work|work|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit_3input.v|
+!s101 -O0
+vmips_mux_32bit_4input
+Ie?Ib0_YSUWjHXV6oeEAhh0
+VE?TiAk[V4DkGdcW13JZIl2
+R1
+w1483092113
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit_4input.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit_4input.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 C;6WQ?5@49U]]FT;DNHbC3
+!s85 0
+!s108 1514989354.498000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit_4input.v|
+!s90 -reportprogress|300|-work|work|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_32bit_4input.v|
+!s101 -O0
+vmips_mux_5bit
+IoQM<SQW01::04=GhKNjKz3
+VW=5^COWM;mU[C;Nz4T=5z0
+R1
+w1482667802
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_5bit.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_5bit.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 YP>TUmmlRKNgMCD?4Wb@62
+!s85 0
+!s108 1514989353.736000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_5bit.v|
+!s90 -reportprogress|300|-work|work|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_5bit.v|
+!s101 -O0
+vmips_mux_5bit_3input
+IfoaXi4b5H2bHITIdV[a_D2
+VITS[Uk_ZJ4D=jb3G;9bKA1
+R1
+w1483090684
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_5bit_3input.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_5bit_3input.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 IZIJzYb7AZ7YF_fj:Df1U1
+!s85 0
+!s108 1514989353.928000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_5bit_3input.v|
+!s90 -reportprogress|300|-work|work|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_mux_5bit_3input.v|
+!s101 -O0
+vmips_program_counter
+IinIc]o?U6;mLb2DF3`i^O1
+VN]lU_z^0cDYWJoDbzN?UR0
+R1
+w1482754382
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_program_counter.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_program_counter.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 RRLSY5Y76ChiC7@`IU;m03
+!s85 0
+!s108 1514989354.693000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_program_counter.v|
+!s90 -reportprogress|300|-work|work|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_program_counter.v|
+!s101 -O0
+vmips_registers
+IQ^HX6;KaD;Xz]ZgJBSj`_1
+VIKjnY3G]3R=R@`]J?b;XX0
+R1
+w1514980849
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_registers.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_registers.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 gW2egb9CQ5Zn^PCSJ2^;B3
+!s85 0
+!s108 1514989354.865000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_registers.v|
+!s90 -reportprogress|300|-work|work|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_registers.v|
+!s101 -O0
+vmips_sign_extender
+IlPFPXlGZ>kdEMGIH91:ij0
+VFmQ0D3:Ll23A8l12hE1fZ3
+R1
+w1514981063
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_sign_extender.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_sign_extender.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 d4N>:MbGBAbhoGZD<aaQ;2
+!s85 0
+!s108 1514989355.039000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_sign_extender.v|
+!s90 -reportprogress|300|-work|work|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_sign_extender.v|
+!s101 -O0
+vmips_testbench
+!i10b 1
+!s100 jU`OY853zIa@0Ye^DA;_L0
+In[@l1b1ecPKMB6AnoN<AV0
+Vf2]IUD=7[>X:I4<2Q=7YA2
+R1
+w1514982994
+8D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_testbench.v
+FD:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_testbench.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1514989355.240000
+!s107 D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_testbench.v|
+!s90 -reportprogress|300|-work|work|D:/2017-2018/Organizasyon/Projects/331_Computer_Organization/FinalProject/Upload/111044014/mips_testbench.v|
+!s101 -O0
+R3

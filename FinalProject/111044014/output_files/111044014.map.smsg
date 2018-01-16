@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at mips_data_mem.v(19): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at mips_core.v(33): object "jump" differs only in case from object "Jump" in the same scope
